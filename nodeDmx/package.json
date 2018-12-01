@@ -1,0 +1,25 @@
+{
+  "name": "simple-dmx-server",
+  "version": "0.0.3",
+  "description": "a simple node to DMX server",
+  "main": "simpleBoardServer.js",
+  "dependencies": {
+    "dmx": "*",
+    "express": "*",
+    "open": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigoe/nodeDmx.git"
+  },
+  "author": "Tom Igoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tigoe/nodeDmx/issues"
+  },
+  "homepage": "https://github.com/tigoe/nodeDmx#readme"
+}
