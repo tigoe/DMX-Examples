@@ -19,14 +19,13 @@ var channel = 1;          // set channel and level
 var fadeStep = 1;         // increment to fade; for manual fading
 
 // create a new DMX universe on your serial port:
-var universe = dmx.addUniverse('mySystem',
+var universe = dmx.addUniverse('itpUniverse',
     'enttec-usb-dmx-pro', serialPort);
 
 universe.updateAll(0);   // set all channels to 0
 
 // fading a channel manually:
 function fade() {
-
     // note: putting variable name in [] causes the light
     // object to use the value of light, rather than the name,
     // as the key for the array element:

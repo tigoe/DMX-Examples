@@ -18,7 +18,7 @@ var server = express();           // create a server using express
 
 var DMX = require('dmx');     // include the dmx lib
 var dmx = new DMX();          // create a new control instance
-var serialPort = 	'/dev/tty.usbserial-EN193040';  // your serial port name
+var serialPort = 	'/dev/cu.usbserial-6A2OXGWE';  // your serial port name
 
 // create a new DMX universe on your serial port:
 var universe = dmx.addUniverse('mySystem',
@@ -49,23 +49,27 @@ server.listen(8080);
 server.get('/set/:channel/:level', setChannel);
 open('http://localhost:8080');              // open this URL in a browser
 
+
 //----------------------------------------------------
 // this section makes sure the script turns everything off
 // before quitting:
 function quit(error) {
   if (error) {
-    console.log('Uncaught Exception: ');
-    console.log(error.stack);
+      console.log('Uncaught Exception: ');
+      console.log(error.stack);
   }
   console.log('quitting');
-  if (exitFunction) exitFunction();   // if there's an exit function, use it
-  setTimeout(process.exit, 1500);     // after 1 second, quit
+  for (c = 0; c < 256; c++) {
+      var channel = { [c]: 0 };       // make an object
+      universe.update(channel);     // set channel to 0
+  }
+  // after 0.5 second, quit 
+  // (allows plenty of time for sending final blackout data):
+  setTimeout(process.exit, 500);
 }
-
-var exitFunction = blackout;
 
 //Stop the script from quitting before you clean up:
 process.stdin.resume();
 process.on('SIGINT', quit);             // catch ctrl+c:
-process.on('uncaughtException', quit);  // catch uncaught exceptions
+process.on('uncaughtException', quit);  //catch uncaught exceptions
 process.on('beforeExit', quit);         // catch the beforeExit message

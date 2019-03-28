@@ -4,7 +4,7 @@
   "description": "a simple node to DMX server",
   "main": "simpleBoardServer.js",
   "dependencies": {
-    "dmx": "*",
+    "dmx": "^0.2.2",
     "express": "*",
     "open": "^0.0.5"
   },

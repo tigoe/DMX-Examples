@@ -15,7 +15,7 @@ by Tom Igoe
 var DMX = require('dmx');     // include the dmx lib
 var dmx = new DMX();          // create a new control instance
 var sequence = DMX.Animation; // create a new animation sequence instance
-var serialPort = 	'/dev/tty.usbserial-EN193040';  // your serial port name
+var serialPort = 	'/dev/cu.usbserial-6A2OXGWE';  // your serial port name
 
 var dmxAddress = 99;     // the light's starting address
 
@@ -107,15 +107,18 @@ setTimeout(function() {
 // before quitting:
 function quit(error) {
   if (error) {
-    console.log('Uncaught Exception: ');
-    console.log(error.stack);
+      console.log('Uncaught Exception: ');
+      console.log(error.stack);
   }
   console.log('quitting');
-  if (exitFunction) exitFunction();   // if there's an exit function, use it
-  setTimeout(process.exit, 1000);     // avter 1 second, quit
+  for (c = 0; c < 256; c++) {
+      var channel = { [c]: 0 };       // make an object
+      universe.update(channel);     // set channel to 0
+  }
+  // after 0.5 second, quit 
+  // (allows plenty of time for sending final blackout data):
+  setTimeout(process.exit, 500);
 }
-
-var exitFunction = blackout;
 
 //Stop the script from quitting before you clean up:
 process.stdin.resume();
