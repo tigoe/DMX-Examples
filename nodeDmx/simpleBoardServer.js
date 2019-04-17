@@ -3,13 +3,14 @@ DMX server example
 context: node.js
 
 Shows how to use dmx library with an Enttec USB DMX Pro
+Or a DMXKing ULtra DMX Micro.
 For more on the library, see https://github.com/wiedi/node-dmx
 
 This is a web server that responds to HTTP GET requests
 for /set/channel/level
 
 created 12 April 2017
-modified 8 May 2017
+modified 17 April 2019
 by Tom Igoe
 */
 const open = require('open');
@@ -26,10 +27,10 @@ var universe = dmx.addUniverse('mySystem',
 
 // turn everything off:
 function blackout() {
-  console.log('blackout');
+  console.log('turning off all lights:');
   for (channel=0; channel < 256; channel++) {
     var light = {[channel]: 0};       // make an object
-    universe.update(light);               // set channel to 0
+    universe.update(light);           // set channel to 0
   }
 }
 
@@ -38,13 +39,16 @@ function setChannel(request, response) {
   + ' level: ' + request.params.level);
   var channel = request.params.channel;
   var level = request.params.level;
+  // send the DMX command out the serial port:
   universe.update({[channel]:level});
+  // send a reply to the client:
   response.end('set ' + channel + ' to ' + level);
 }
 
 blackout();
 server.use('/',express.static('public'));   // set a static file directory
 server.listen(8080);
+// listen for /set/channel/level and call setChannel() function as callback:
 server.get('/set/:channel/:level', setChannel);
 open('http://localhost:8080');              // open this URL in a browser
 
