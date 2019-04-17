@@ -12,13 +12,13 @@ created 12 April 2017
 modified 8 May 2017
 by Tom Igoe
 */
-var open = require('open');
-var express = require('express'); // include the express library
-var server = express();           // create a server using express
+const open = require('open');
+const express = require('express'); // include the express library
+const server = express();           // create a server using express
 
-var DMX = require('dmx');     // include the dmx lib
-var dmx = new DMX();          // create a new control instance
-var serialPort = 	'/dev/cu.usbserial-6A2OXGWE';  // your serial port name
+const DMX = require('dmx');     // include the dmx lib
+const dmx = new DMX();          // create a new control instance
+const serialPort = 	'/dev/cu.usbserial-6A2OXGWE';  // your serial port name
 
 // create a new DMX universe on your serial port:
 var universe = dmx.addUniverse('mySystem',
@@ -38,8 +38,7 @@ function setChannel(request, response) {
   + ' level: ' + request.params.level);
   var channel = request.params.channel;
   var level = request.params.level;
-  // set channel (most DMX systems are 1-indexed, but this library is 0-indexed):
-  universe.update({[channel-1]:level});
+  universe.update({[channel]:level});
   response.end('set ' + channel + ' to ' + level);
 }
 
