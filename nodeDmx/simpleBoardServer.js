@@ -13,7 +13,6 @@ created 12 April 2017
 modified 17 April 2019
 by Tom Igoe
 */
-const open = require('open');
 const express = require('express'); // include the express library
 const server = express();           // create a server using express
 
@@ -50,7 +49,6 @@ server.use('/',express.static('public'));   // set a static file directory
 server.listen(8080);
 // listen for /set/channel/level and call setChannel() function as callback:
 server.get('/set/:channel/:level', setChannel);
-open('http://localhost:8080');              // open this URL in a browser
 
 
 //----------------------------------------------------
