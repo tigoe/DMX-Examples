@@ -2,19 +2,20 @@
 DMXKing's LeDMX Pro4 interface is designed to control [addressable LEDs](https://tigoe.github.io/LightProjects/addressable-leds.html) such as the WorldSemi WS281x LEDs or APA's APA102C and related LEDs. 
 
 ## Bill of Materials
-* LeDMX Pro4
+
+* [LeDMX4 Pro4](https://dmxking.com/led-pixel-control/ledmx4-pro) 
 * 5V Power supply for LeDMX Pro4
 * WS2812 LEDs
 * Personal computer
 * Ethernet connection to personal computer
-* TouchDesigner IDE
+* [TouchDesigner](https://derivative.ca/product) IDE
 
 ## Hardware Configuration
 Make sure you've powered the LeDMX Pro4 correctly. WS2812 LEDs run on 5V, so a 5V power supply is the right supply for them. There are addressable LEDs that run on higher voltage, like the WS2815 (12V), and the LeDMX Pro4 is also available in a 12-24V model, but this tutorial uses the 5V version. 
 
 Connect your LEDs to Universe 1 of the LeDMX Pro4 as shown in Figure 1.
 
-![Figure 1. NeoPixel Jewel, a WS2812 module, connected to Universe 1 of a LeDMX Pro4](img/ledmxpro4-neopixel-jewel.png)
+![Figure 1. NeoPixel Jewel, a WS2812 module, connected to Universe 1 of a LeDMX Pro4](img/ledmxpro4-neopixel-jewel.jpg)
 
 _Figure 1. NeoPixel Jewel, a WS2812 module, connected to Universe 1 of a LeDMX Pro4. The 5V line is connected to +v, and ground is connected to GND. The control line is connected to DA._ 
 
@@ -49,4 +50,4 @@ _Figure 3. DMX tab of a TouchDesigner DMX Out CHOP configured for sACN control._
 _Figure 4. Network tab of a TouchDesigner DMX Out CHOP configured for sACN control. The USB-to-Ethernet's self-assigned IP address is shown in the Local Address field._ 
 
 # Example Program
-This [touchDesigner program](../TouchDesigner-Examples/LeDMX-pro-RGBW_Fixtures.toe)  will control three pixels of an RGBW WS2812 LED strip. 
+This [touchDesigner program](https://github.com/tigoe/DMX-Examples/TouchDesigner-Examples/LeDMX-pro-RGBW_Fixtures.toe)  will control three pixels of an RGBW WS2812 LED strip. 
