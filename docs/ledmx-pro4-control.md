@@ -51,5 +51,14 @@ _Figure 3. DMX tab of a TouchDesigner DMX Out CHOP configured for sACN control._
 
 _Figure 4. Network tab of a TouchDesigner DMX Out CHOP configured for sACN control. The USB-to-Ethernet's self-assigned IP address is shown in the Local Address field._ 
 
+# QLC+ Configuration
+If you're using QLC+, open the application and click the Inputs/Outputs tab. You'll see a list of input and output interfaces, as shown in Figure 5. One of them will have the self-assigned IP address beginning with 169.254.x.x. This is the eDMX1 Pro. Choose this as your output. 
+
+Next, click the Simple Desk tab. You'll have a row of sliders. Slide any of them to control the corresponding DMX channel coming out of your eDMX1 Pro. 
+
+![Figure 5. Inputs/Outputs tab of QLC+ showing the eDMX1 Pro on the 169.254.x.x. interface as the output.](img/edmd1-pro-qlc-plus-config.png)
+
+_Figure 5. Inputs/Outputs tab of QLC+ showing the eDMX1 Pro on the 169.254.x.x. interface as the output. Unless you're taking input from another program, it doesn't matter what you choose as input._ 
+
 # Example Program
 This [touchDesigner program](https://github.com/tigoe/DMX-Examples/TouchDesigner-Examples/LeDMX-pro-RGBW_Fixtures.toe)  will control three pixels of an RGBW WS2812 LED strip. 
