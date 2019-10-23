@@ -7,5 +7,6 @@ Included in this repository are:
 * Node.js examples with node-dmx
 * Arduino examples using ArduinoDMX library
 * Arduino examples using DMXSimple library
-* [TouchDesigner examples](https://github.com/tigoe/DMX-Examples/TouchDesigner-examples/readme.md)
+* TouchDesigner examples
+   * [Addressable LED control through sACN with LeDMX Pro4](ledmx-pro4-control.md)
 * QLC+ examples
