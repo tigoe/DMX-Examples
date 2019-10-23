@@ -61,4 +61,4 @@ Next, click the Simple Desk tab. You'll have a row of sliders. Slide any of them
 _Figure 5. Inputs/Outputs tab of QLC+ showing the eDMX1 Pro on the 169.254.x.x. interface as the output. Unless you're taking input from another program, it doesn't matter what you choose as input._ 
 
 # Example Program
-This [touchDesigner program](https://github.com/tigoe/DMX-Examples/TouchDesigner-Examples/LeDMX-pro-RGBW_Fixtures.toe)  will control three pixels of an RGBW WS2812 LED strip. 
+This [touchDesigner program](https://github.com/tigoe/DMX-Examples/blob/master/TouchDesigner-Examples/LeDMX-pro-RGBW_Fixtures.toe)  will control three pixels of an RGBW WS2812 LED strip. 
