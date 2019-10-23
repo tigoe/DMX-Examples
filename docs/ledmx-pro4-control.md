@@ -1,6 +1,8 @@
 # Controlling Programmable LEDs with DMXKing's LeDMX Pro4 
 DMXKing's LeDMX Pro4 interface is designed to control [addressable LEDs](https://tigoe.github.io/LightProjects/addressable-leds.html) such as the WorldSemi WS281x LEDs or APA's APA102C and related LEDs. 
 
+This has been tested on MacOS Mojave.
+
 ## Bill of Materials
 
 * [LeDMX4 Pro4](https://dmxking.com/led-pixel-control/ledmx4-pro) 
