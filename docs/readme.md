@@ -4,6 +4,7 @@ A collection of examples for controlling DMX-512  devices, in a variety of progr
 
 Included in this repository are:
 
+* [A Brief Introduction to DMX and sACN](dmx-intro.md)
 * Node.js examples with node-dmx
 * [Arduino examples using ArduinoDMX library](arduinodmx.md)
 * Arduino examples using DMXSimple library
