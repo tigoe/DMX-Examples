@@ -1,7 +1,7 @@
 /*
   DMX 4-channel Fade
 
-  This sketch fades the value of a DMX between 0 and 255
+  This sketch fades the value of a DMX channel between 0 and 255
   in steps to create a fade effect. It steps through the first four channels.
   All other channels are set to a value of 0.
 
