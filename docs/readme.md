@@ -10,3 +10,5 @@ Included in this repository are:
 * [Addressable LED control through sACN with LeDMX Pro4](ledmx-pro4-control.md). Includes TouchDesigner and QLC+ configurations
 * [sACN control through an DMXKing eDMX1 Pro](edmx-pro1-control.md). Includes TouchDesigner and QLC+ configuration.
 * QLC+ examples
+
+The Arduino circuits described in this repository use on these [breadboard layouts](https://itp.nyu.edu/physcomp/breadboard-layouts/) for reference, and these [microcontroller pin arrangments](https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontroller-pin-functions/).
