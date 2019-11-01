@@ -15,6 +15,11 @@ Here's a list of the hardware used in this repository, with links to suppliers
 * [Chroma-Q ColorCharge](https://chroma-q.com/products/color-charge)
 * [ETC Desire D22](https://www.etcconnect.com/Products/Lighting-Fixtures/Desire-D22/Features.aspx?utm_campaign=Selador)
 
+## Components
+* [MAX485](https://www.digikey.com/product-detail/en/maxim-integrated/MAX485CPA/MAX485CPA-ND/948026) RS485 transceiver IC
+* [120-ohm resistor](https://www.digikey.com/products/en?keywords=120QBK-ND) - for RS485 termination of cables and connectors
+* [XLR 5-pin female connector](https://www.digikey.com/product-detail/en/amphenol-sine-systems-corp/AX5F8M/889-2166-ND/7695453)
+
 ## Software
 
 * [Node.js](https://nodejs.org/en/)
@@ -25,5 +30,6 @@ Here's a list of the hardware used in this repository, with links to suppliers
 * [Arduino](https://www.arduino.cc/en/Main/Software) IDE
    * [ArduinoDMX](https://github.com/arduino-libraries/ArduinoDMX) library
    * [DMXSimple](https://github.com/PaulStoffregen/DmxSimple) library
+
 
 
