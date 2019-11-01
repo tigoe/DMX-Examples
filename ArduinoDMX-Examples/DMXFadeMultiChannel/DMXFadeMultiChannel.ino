@@ -6,9 +6,9 @@
   All other channels are set to a value of 0.
 
 
-  created 31 Oct 2019
+  created 31 Oct 2019 
   by Tom Igoe
-  based on Sandeem Mistry's examples
+  based on Sandeep Mistry's examples
 */
 
 #include <ArduinoRS485.h> // the ArduinoDMX library depends on ArduinoRS485
