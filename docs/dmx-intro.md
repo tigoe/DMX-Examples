@@ -10,24 +10,67 @@ Originally, DMX was intended to control brightness of lights, but nowadays, it c
 
 DMX-512 is a serial protocol, so you connect your controller to the device you want to control directly. DMX fixtures are usually daisy-chained, with the output of one connecting to the input of the next, so that the controller at the beginning of the chain can control all the fixtures. This is generally referred to as a **DMX Universe**. 
 
+## What Kinds of DMX Fixtures Are There?
+
+There are many different kinds of DMX fixtures. Most are stage lighting fixtures, like these:
+
+**Ellipsoidal spotlights**, like the ETC Source 4 LED Spotlight (Figure 1) or the CoeMar LEDKo Reflection LED Spotlight (Figure 2). Ellipsoidals, or Ellipsoidal Reflector Spotlights (ERS), also called LeKos, make a sharp-focused circle. They have shutters to shape the beam, and sometimes an iris. They are typically used for front light, side light, or any time you need to focus the light fairly precisely.
+
+![Figure 1. ETC Source 4 Ellipsoidal spotlight.](img/ellipsoidal-source4.png)
+
+_Figure 1. ETC Source 4 Ellipsoidal spotlight._
+
+![Figure 2. CoeMar LEDKo Ellipsoidal spotlight.](img/ellipsoidal-coemar-ledko.png)
+
+_Figure 2. CoeMar LEDKo Ellipsoidal spotlight._
+
+**LED PAR lights** like the ETC Selador Desire D40 (Figure 3) and D60 LED PAR or the ADJ DotZ PAR (Figure 4). PARs give a broad, soft-edged light. They are generally inxpensive and used as workhorses in music shows.
+
+![Figure 3. ETC Selador Desire D40 LED PAR.](img/par-selador-desire-d40.png)
+
+_Figure 3. ETC Selador Desire D40 LED PAR._
+
+![Figure 4. ADJ DotZ LED PAR.](img/par-adj-dotz.png)
+
+_Figure 4. ADJ DotZ LED PAR._
+
+**Gallery-style lights** like the Rosco Miro Cube (Figure 5). These are small fixtures which give a broad, soft-edged light. They are good for gallery work.
+
+![Figure 5. Rosco Miro Cube light.](img/miro-cube.png)
+
+_Figure 5. Rosco Miro Cube light._
+
+**Wash lights** like  the ColorKinetics ColorBlast 4 and 8 (Figure 6). These also give a broad, soft-edged light designed for washing walls with color The ColorKinetics units have a separate controller that's rather bulky.
+
+![Figure 6. ColorKinetics wash light.](img/wash-color-kinetics.png)
+
+_Figure 6. ColorKinetics wash light._
+
+**Moving spotlights** like the Elation Platinum Pro LED (Figure 7). moving spotlight. These are spotlight with motorized control over 
+pan, tilt, color wheel, zoom, focus, template via DMX.
+
+![Figure 7. Elation Pro Platinum LED moving spotlight.](img/moving-spot-elation.png)
+
+_Figure 7. Elation Pro Platinum LED moving spotlight._
+
 ## What do DMX connectors look like?
 
 There are three common connectors for DMX:
-* XLR 5-pin (Figure 1)
-* XLR 3-pin (Figure 2)
-* Ethernet RJ-45 (Figure 3)
+* XLR 5-pin (Figure 8)
+* XLR 3-pin (Figure 9)
+* Ethernet RJ-45 (Figure 10)
 
-![Figure 1. XLR 5-pin connectors.](img/xlr-5-pin.png)
+![Figure 8. XLR 5-pin connectors.](img/xlr-5-pin.png)
 
-_Figure 1.XLR 5-pin connectors_
+_Figure 8.XLR 5-pin connectors_
 
-![Figure 2. XLR 5-pin connectors.](img/xlr-3-pin.png)
+![Figure 9. XLR 5-pin connectors.](img/xlr-3-pin.png)
 
-_Figure 2.XLR 5-pin connectors_
+_Figure 9.XLR 5-pin connectors_
 
-![Figure 3. XLR-to-RJ45 connectors.](img/xlr-to-rj45.png)
+![Figure 10. XLR-to-RJ45 connectors.](img/xlr-to-rj45.png)
 
-_Figure 3.XLR-to-RJ45 connectors_
+_Figure 10.XLR-to-RJ45 connectors_
 
 
 ## What Do I Need If I want to Control DMX From My Computer?
@@ -38,19 +81,19 @@ You'll also need software that can communicate using your DMX interface. [QLC+](
 
 ## How are DMX Devices Connected Together?
 
-Figure 4 shows a typical DMX universe. The controller connects to the first fixture, which is assigned the starting address 1. Its parameters, for example red intensity, green intensity, blue intensity, etc, are controlled with channels 1, 2, 3, and so forth. The second fixture is connected the the output of the first, and is given the starting address 21. Its parameters are controlled by channels 21, 22, 23, etc. The pattern continues to the third, fourth, and fifth fixtures in the Figure 1, which have starting addresses 41, 61, and 81, respectively. 
+Figure 12 shows a typical DMX universe. The controller connects to the first fixture, which is assigned the starting address 1. Its parameters, for example red intensity, green intensity, blue intensity, etc, are controlled with channels 1, 2, 3, and so forth. The second fixture is connected the the output of the first, and is given the starting address 21. Its parameters are controlled by channels 21, 22, 23, etc. The pattern continues to the third, fourth, and fifth fixtures in the Figure 1, which have starting addresses 41, 61, and 81, respectively. 
 
-Starting addresses for each fixture are chosen based on how many parameters the fixture needs. Figure 1 was based on a set of fixtures that had 12 control parameters. Spacing each address 20 away from the previous made it easy to remember. In a crowded universe, however, you might set the address of one fixture right after the highest channel of the previous fixture. 
+Starting addresses for each fixture are chosen based on how many parameters the fixture needs. Figure 11 was based on a set of fixtures that had 12 control parameters. Spacing each address 20 away from the previous made it easy to remember. In a crowded universe, however, you might set the address of one fixture right after the highest channel of the previous fixture. 
 
-![Figure 4. A typical DMX universe of five fixtures.](img/dmx-universe.png)
+![Figure 11. A typical DMX universe of five fixtures.](img/dmx-universe.png)
 
-_Figure 4. A typical DMX universe of five fixtures. The fixtures are daisy-chained together, with each one's starting address set higher than the last channel of the previous fixture._
+_Figure 11. A typical DMX universe of five fixtures. The fixtures are daisy-chained together, with each one's starting address set higher than the last channel of the previous fixture._
 
-Fugure 5 shows how you might control a DMX universe from your computer. A USB-to-DMX adapter like the ones mentioned above is connected to the computer, and the first lighting fixture is connected to the adapter. 
+Figure 12 shows how you might control a DMX universe from your computer. A USB-to-DMX adapter like the ones mentioned above is connected to the computer, and the first lighting fixture is connected to the adapter. 
 
-![Figure 5. A  DMX universe controlled by a personal computer using a USB-to-DMX adapter.](img/usb-to-dmx-configuration.png)
+![Figure 12. A  DMX universe controlled by a personal computer using a USB-to-DMX adapter.](img/usb-to-dmx-configuration.png)
 
-_Figure 5. A  DMX universe controlled by a personal computer using a USB-to-DMX adapter._
+_Figure 12. A  DMX universe controlled by a personal computer using a USB-to-DMX adapter._
 
 ## What is ACN?
 
@@ -60,10 +103,10 @@ Advanced Control Networking (ACN), or streaming ACN (sACN) is a protocol for sta
 
 You'll need an Ethernet-to-DMX adapter like the DMXKing [eDMX1 Pro](https://dmxking.com/artnetsacn/edmx1-pro) Ethernet-to-DMX adapter. You'll also need an Ethernet router, or a USB-to-Ethernet adapter. You'll want DMXKing's [DMXKing eDMX1 Pro Configuration Utility](https://dmxking.com/artnetsacn/edmx1-pro) as well.
 
-Figure 6 shows a typical sACN network. Your controller is connected to an ethernet or WiFi network, and an sACN-to-DMX adapter like the eDMX1 Pro is attached to the same network via wired Ethernet. The controller sends sACN packets over the network to the adapter. Those packets contain DMX channel information. The adapter outputs DMX to the universe of fixtures attached to it, just like the DMX universes described in Figures 4 and 5. 
+Figure 13 shows a typical sACN network. Your controller is connected to an ethernet or WiFi network, and an sACN-to-DMX adapter like the eDMX1 Pro is attached to the same network via wired Ethernet. The controller sends sACN packets over the network to the adapter. Those packets contain DMX channel information. The adapter outputs DMX to the universe of fixtures attached to it, just like the DMX universes described in Figures 4 and 5. 
 
 Best practice is to make the local area network for sACN a dedicated network that's carrying no other traffic and is not connected to the Internet. This ensures the best connectivity between controller and lights.
 
-![Figure 6. An sACN network.](img/sacn-to-dmx-configuration.png)
+![Figure 13. An sACN network.](img/sacn-to-dmx-configuration.png)
 
-_Figure 6. An sACN network. The network is made up of an Ethernet and WiFi local area network (LAN), a controller which sends sACN data over UDP, and an sACN-to-DMX adapter which connects from the LAN to the DMX universe of fixtures._
+_Figure 13. An sACN network. The network is made up of an Ethernet and WiFi local area network (LAN), a controller which sends sACN data over UDP, and an sACN-to-DMX adapter which connects from the LAN to the DMX universe of fixtures._
