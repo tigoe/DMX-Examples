@@ -3,7 +3,7 @@
 The [ArduinoDMX library](https://github.com/arduino-libraries/ArduinoDMX), originally written to work with the MKR series Arduinos and the MKR485 shield, will also enable you to send DMX-512 out from any Arduino to control DMX fixtures. This library uses the [ArduinoRS485 library](https://github.com/arduino-libraries/ArduinoRS485) and an RS485 transceiver chip like Maxim's [MAX485](https://www.maximintegrated.com/en/products/interface/transceivers/MAX485.html) chip to send DMX data.
 
 ## Bill of Materials
-* Arduino (any model)
+* Arduino (any model; these have been tested with a Nano 33 IoT and a Nano Every)
 * Arduino [MKR485 shield](https://store.arduino.cc/usa/arduino-mkr-485-shield) (if you're using one of the MKR series Arduinos) or
 * [MAX485](https://www.digikey.com/product-detail/en/maxim-integrated/MAX485CPA/MAX485CPA-ND/948026) RS485 transceiver IC
 * [120-ohm resistor](https://www.digikey.com/products/en?keywords=120QBK-ND) - for RS485 termination of cables and connectors
