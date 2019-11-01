@@ -10,7 +10,7 @@ Originally, DMX was intended to control brightness of lights, but nowadays, it c
 
 DMX-512 is a serial protocol, so you connect your controller to the device you want to control directly. DMX fixtures are usually daisy-chained, with the output of one connecting to the input of the next, so that the controller at the beginning of the chain can control all the fixtures. This is generally referred to as a **DMX Universe**. 
 
-## What Kinds of DMX Fixtures Are There?
+### What Kinds of DMX Fixtures Are There?
 
 There are many different kinds of DMX fixtures. Most are stage lighting fixtures, like these:
 
@@ -53,7 +53,7 @@ pan, tilt, color wheel, zoom, focus, template via DMX.
 
 _Figure 7. Elation Pro Platinum LED moving spotlight._
 
-## What do DMX connectors look like?
+### What do DMX connectors look like?
 
 There are three common connectors for DMX:
 * XLR 5-pin (Figure 8)
@@ -74,12 +74,12 @@ _Figure 10.XLR-to-RJ45 connectors_
 
 There are many other kinds of DMX fixtures. It's also become popular to control LED strips and programmable LEDs with DMX, and for that purpose, there are a range of controllers you can buy. 
 
-## What Do I Need If I want to Control DMX From My Computer?
+### What Do I Need If I want to Control DMX From My Computer?
 First you'll need a USB-to-DMX adapter like the Enttec [DMX Pro](https://www.enttec.com/product/controls/dmx-usb-interfaces/dmx-usb-interface/) USB-to-DMX adapter or [DMXKing UltraDMX Micro](https://dmxking.com/usbdmx/ultradmxmicro) USB-to-DMX adapter.
 
 You'll also need software that can communicate using your DMX interface. [QLC+](https://www.qlcplus.org/), the [TouchDesigner](https://derivative.ca/product) IDE, and [node.js](https://nodejs.org/en/) using the [node-dmx](https://github.com/node-dmx/dmx) library can all do this. 
 
-## How are DMX Devices Connected Together?
+### How are DMX Devices Connected Together?
 
 Figure 11 shows a typical DMX universe. The controller connects to the first fixture, which is assigned the starting address 1. Its parameters, for example red intensity, green intensity, blue intensity, etc, are controlled with channels 1, 2, 3, and so forth. The second fixture is connected the the output of the first, and is given the starting address 21. Its parameters are controlled by channels 21, 22, 23, etc. The pattern continues to the third, fourth, and fifth fixtures in the Figure 1, which have starting addresses 41, 61, and 81, respectively. 
 
@@ -99,7 +99,7 @@ _Figure 12. A  DMX universe controlled by a personal computer using a USB-to-DMX
 
 Advanced Control Networking (ACN), or streaming ACN (sACN) is a protocol for stage lighting adopted by USITT as a modern replacement for DMX512. Basically, it’s DMX over Ethernet. It works over IP networks. DMX messages are contained in UDP packets. ACN can handle multiple universes of DMX, each with 512 channels.
 
-## What Do I Need If I Want to Control sACN Networks From My Computer?
+### What Do I Need If I Want to Control sACN Networks From My Computer?
 
 You'll need an Ethernet-to-DMX adapter like the DMXKing [eDMX1 Pro](https://dmxking.com/artnetsacn/edmx1-pro) Ethernet-to-DMX adapter. You'll also need an Ethernet router, or a USB-to-Ethernet adapter. You'll want DMXKing's [DMXKing eDMX1 Pro Configuration Utility](https://dmxking.com/artnetsacn/edmx1-pro) as well.
 
