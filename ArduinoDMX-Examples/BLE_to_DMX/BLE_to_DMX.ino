@@ -8,7 +8,7 @@
 
   The circuit:
   - Arduino MKR WiFi 1010, Arduino Uno WiFi Rev2, or Nano 33 board
-  - MKR485 shield or MAX485 chio
+  - MKR485 shield or MAX485 chip
 
   created 11 April 2019
   by Tom Igoe
