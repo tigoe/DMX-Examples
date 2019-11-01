@@ -1,14 +1,14 @@
 /*
-  LED
+  BLE-to-DMX
 
   This example creates a BLE peripheral with service
-  to control 3 DMX channels A central device can send to this
-  device and this device will send the DMX signals to DMX lights
-  via a MKR485 shield.
+  to control 3 DMX channels. A central device can send to this
+  device and this device will send the DMX signals 
+  via a MKR485 shield or MAX485 chip.
 
   The circuit:
-  - Arduino MKR WiFi 1010 or Arduino Uno WiFi Rev2 board
-  - MKR485 shield
+  - Arduino MKR WiFi 1010, Arduino Uno WiFi Rev2, or Nano 33 board
+  - MKR485 shield or MAX485 chio
 
   created 11 April 2019
   by Tom Igoe
