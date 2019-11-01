@@ -72,12 +72,12 @@ _Figure 9.XLR 5-pin connectors_
 
 _Figure 10.XLR-to-RJ45 connectors_
 
+There are many other kinds of DMX fixtures. It's also become popular to control LED strips and programmable LEDs with DMX, and for that purpose, there are a range of controllers you can buy. 
 
 ## What Do I Need If I want to Control DMX From My Computer?
 First you'll need a USB-to-DMX adapter like the Enttec [DMX Pro](https://www.enttec.com/product/controls/dmx-usb-interfaces/dmx-usb-interface/) USB-to-DMX adapter or [DMXKing UltraDMX Micro](https://dmxking.com/usbdmx/ultradmxmicro) USB-to-DMX adapter.
 
 You'll also need software that can communicate using your DMX interface. [QLC+](https://www.qlcplus.org/), the [TouchDesigner](https://derivative.ca/product) IDE, and [node.js](https://nodejs.org/en/) using the [node-dmx](https://github.com/node-dmx/dmx) library can all do this. 
-
 
 ## How are DMX Devices Connected Together?
 
