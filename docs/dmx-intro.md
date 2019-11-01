@@ -30,7 +30,7 @@ _Figure 2. CoeMar LEDKo Ellipsoidal spotlight._
 
 _Figure 3. ETC Selador Desire D40 LED PAR._
 
-![Figure 4. ADJ DotZ LED PAR.](img/par-adj-dotz.png)
+![Figure 4. ADJ DotZ LED PAR.](img/par-adj-dotz-par.png)
 
 _Figure 4. ADJ DotZ LED PAR._
 
