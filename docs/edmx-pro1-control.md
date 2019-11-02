@@ -18,17 +18,24 @@ This has been tested on MacOS Mojave.
 Power the eDMXPro via its USB connector. You can power it from a wall socket using a regular USB charging adapter, as long as the adapter can supply at least 150 milliamps. Connect the DMX connector of the unit to your DMX fixture, or to the first of your fixtures if you've got a chain of lights. Make sure you've set the starting addresses for all of your fixtures appropriately. If you're just using one fixture, starting address 1 will be fine.
 
 ## Network Configuration
- Connect the eDMX1 Pro to your computer via Ethernet. You can either connect both your computer and the eDMX1 Pro to the same router, or with many computers, you can connect them directly. For example, when you plug an eDMX1 Pro into a USB-to-Ethernet adapter on a Mac, the eDMX Pro1 assigns itself an IP address in the 169.254.x.x range, as shown in Figure 1. At that time, my computer also assigns itself an address in the same range. Open your system control panel and note the IP address of your Ethernet connection when the eDMX1 Pro is plugged in.
-
- If your eDMX1 Pro is not self-assigning open the eDMX Configuration software, as shown in Figure 2. The configuration software will probe all active network interfaces. It should add the USB-to-Ethernet connection to the list in that process. If the eDMX1Pro still won't self-assign, try turning off WiFi and then selecting the 169.254 interface and doing another node scan. In that case, your Ethernet connection would be the only network interface, and the configuration software would find it easier. You can turn WiFi back on once the eDMX1 Pro self-assigns.
+ Connect the eDMX1 Pro to your computer via Ethernet. You can either connect both your computer and the eDMX1 Pro to the same router, or with many computers, you can connect them directly. For example, when you plug an eDMX1 Pro into a USB-to-Ethernet adapter on a Mac, the eDMX Pro1 assigns itself an IP address in the 169.254.x.x range, as shown in Figure 1. At that time, your computer also assigns itself an address in the same range. Open your system control panel and note the IP address of your Ethernet connection when the eDMX1 Pro is plugged in.
 
  ![Figure 1. MacOS Network control panel showing a USB-to-Ethernet adapter, to which the eDMX1 Pro is attached.](img/macos-usb-ethernet-control-config.png)
 
 _Figure 1. MacOS Network control panel showing a USB-to-Ethernet adapter, to which the eDMX1 Pro is attached. The eDMX1 Pro has self-assigned an IP address._ 
 
-![Figure 2. eDMX Configuration software.](img/edmx1-pro-config.png)
 
-_Figure 2. eDMX Configuration software. The computer's WiFi has been turned off and a node scan performed to get the eDMX1 Pro to self-assign an address._ 
+ **Note:**  If your eDMX1 Pro is not self-assigning you may need to use the DMXKing [DMXKing eDMX1 Pro Configuration Utility](https://dmxking.com/artnetsacn/edmx1-pro) to configure your eDMX1 Pro's address. The eDMX1 Pro is factory-configured to set itself to a static IP address in the 192.168.0.x range, yet most Ethernet interfaces are configured to set themselves to an address in the 169.254.x.x range when there's no router present.  If your eDMX1 Pro is not showing up when you Node Scan, try the following **with WiFi turned OFF** so that the configuration utility only scans on the USB-to-Ethernet interface:
+ 
+1. open your Network control panel and manually assign your USB-to-Ethernet adapter the address 192.168.0.100. 
+2. Then, open eDMX Pro Configuration Utility. Pick the 192.168.0.100 adapter from the option menu.
+3. Click Node Scan. After a few moments, your eDMX1 Pro will appear. Choose it, and you'll get a configuration screen as shown in Figure 2. 
+4. Choose DHCP, then click Apply. Close the configuration utility, then re-set your USB-to-Ethernet adapter to DHCP in your Network control panel.
+5. Open the eDMX Configuration Utility again. Now  you'll be able to select the 169.254.x.x address, and when you Node Scan, your eDMX1 Pro will show up with an address in the same range. You can turn your WiFi back on now too. 
+
+![Figure 2. eDMX Pro Configuration Utility Window.](img/edmx-config-window-2.png)
+
+_Figure 2. eDMX Pro Configuration Utility Window. Set your device to DHCP and you'll be able to get an address on any network you connect to._ 
 
 # TouchDesigner DMX CHOP Configuration
 Now open TouchDesigner and add a DMX Out CHOP. In the DMX tab of the CHOP, set the interface to sACN. Then set the Universe to 1. In the Network tab, click the arrow of the Interface option menu and you should see the 169.254.x.x address that your computer self-assigned in the list. Pick that, or enter it manually. Now the DMX Out CHOP will communicate with the LeDMX Pro. 
