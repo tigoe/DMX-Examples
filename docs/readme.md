@@ -5,7 +5,7 @@ A collection of examples for controlling DMX-512  devices, in a variety of progr
 Included in this repository are:
 
 * [A Brief Introduction to DMX and sACN](dmx-intro.md)
-* Node.js examples with node-dmx
+* [Node.js examples with node-dmx](nodedmx.md)
 * [Arduino examples using ArduinoDMX library](arduinodmx.md)
 * Arduino examples using DMXSimple library
 * [Addressable LED control through sACN with LeDMX Pro4](ledmx-pro4-control.md). Includes TouchDesigner and QLC+ configurations
