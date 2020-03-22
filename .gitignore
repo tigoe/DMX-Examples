@@ -2,4 +2,5 @@
 .vscode/c_cpp_properties.json
 .vscode/arduino.json
 docs/img/nano-rs485.sketch
-Arduino-sACN-Examples/sACNSimple/arduino_secrets.h
+*arduino_secrets.h
+*/arduino_secrets.h
