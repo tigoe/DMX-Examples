@@ -27,3 +27,4 @@ On all interactive examples, it's a good practice to comment out the .sendPacket
 
 * [sACN Fade knob](https://github.com/tigoe/DMX-Examples/tree/master/Arduino-sACN-Examples/sACNFadeKnob): fades a DMX channel  over sACN based on the value of a potentiometer. Sends the DMX signal every 100ms, and only if the potentiometer has changed by more than 1%.
 
+* [sACN Fade Encoder](https://github.com/tigoe/DMX-Examples/tree/master/Arduino-sACN-Examples/sACNFadeEncoder): fades a DMX channel  over sACN based on the value of a rotary encoder. Uses the encoder's pushbutton as a blackout button. Sends the DMX signal every 100ms only if the encoder has changed.
