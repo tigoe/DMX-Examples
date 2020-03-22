@@ -56,7 +56,6 @@ void setup() {
 }
 
 void loop() {
-
   // don't send all the time; once every 100ms is generally enough:
   if (millis() - lastFadeTime > fadeDelay) {
     // read the knob's value, divide by 4 to get 0-255:
@@ -67,9 +66,9 @@ void loop() {
       myController.setChannel(1, level);       // set channel 1
       Serial.println(level);                    // print level
       myController.sendPacket(receiverAddress); // send the data
+      // save current level for comparison next time:
+      lastLevel = level;
     }
-    // save current level for comparison next time:
-    lastLevel = level;
     // save current time for comparison next time:
     lastFadeTime = millis();
   }
