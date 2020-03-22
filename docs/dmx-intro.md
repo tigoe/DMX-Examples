@@ -4,11 +4,11 @@ DMX-512 and Advanced controller Networking (ACN) or streaming ACN (sACN) are pro
 
 ## What is DMX-512?
 
-DMX-512 is a control protocol for stage lighting It is a serial communications protocol, based on RS-485. It operates at 250 kilobits per second. You can send up to 512 channels of  control information, with 1 byte of information per channel
+DMX-512 is a control protocol for stage lighting. It is an asynchronous serial communications protocol, based on the RS-485 protocol. It operates at 250 kilobits per second. You can send up to 512 channels of control information in a single DMX-512 message, with 1 byte of information per channel.
 
 Originally, DMX was intended to control brightness of lights, but nowadays, it controls many other devices and other parameters of lights.
 
-DMX-512 is a serial protocol, so you connect your controller to the device you want to control directly. DMX fixtures are usually daisy-chained, with the output of one connecting to the input of the next, so that the controller at the beginning of the chain can control all the fixtures. This is generally referred to as a **DMX Universe**. 
+DMX-512 is a serial protocol, so you connect your controller to the device you want to control directly. When it was first introduced, this protocol was intended to control racks of AC dimmer circuits. Each rack would have a group of dimmers, and incandescent lights would be plugged into each dimmer. Each rack would have a control board with a DMX input and a DMX pass-through. Dimmer racks were daisy-chained, with the DMX control signal going into the input of the firstrack, then out of its pass through to the second rack, and so forth. This is generally referred to as a **DMX Universe**. Nowadays, LED fixtures have their own dimming circuits built into the fixture itself so they have DMX inputs and passthroughs right on the fixture. 
 
 ### What Kinds of DMX Fixtures Are There?
 
@@ -52,6 +52,17 @@ pan, tilt, color wheel, zoom, focus, template via DMX.
 ![Figure 7. Elation Pro Platinum LED moving spotlight.](img/moving-spot-elation.png)
 
 _Figure 7. Elation Pro Platinum LED moving spotlight._
+
+
+### A Brief History of Stage Lighting Technology, 1970's to Present
+
+Stage lights have changed significantly since the 20th century. When DMX-512 was designed, most fixtures were incandescent fixtures, typically high-wattage sources, 750 watts or more. Each fixture generally only had one channel of lighting control. If you wanted to color the light, you put a color filter in front of the light. If you wanted to move the light, you positioned a technician with a communications headset next to the light. It was highly unusual to have more than 512 lights in a single light plot; typical stage shows might have between 12 and 300. All the DMX control lines could go to one central place, where the dimmers were, and power to the fixtures was broken out from the dimmers.
+
+In the 80's and 90's, that started to change. Color scrollers and moving lights were introduced. A [color scroller](https://en.wikipedia.org/wiki/Color_scroller) is a motor with two spindles that scroll a series of different filters past the lens of the fixture.  [Moving head spotlights](https://www.stagelightingstore.com/842084-LED-Moving-Head-Spots_2) are mounted on a yoke with motors in the base and the side of the yoke, so the spotlight can be moved remotely. Moving mirror spotlights have a mirror that moves in two dimensions rather than moving the whole unit. See this page on [stage lighting for students](http://www.stagelightingprimer.com/index.html?slfs-fixtures.html&2) for pictures. These fixture add-ons are controllable via DMX-512 as well. 
+
+The addition of these new accessories meant that instead of having one central point for the DMX-512 control lines to end, you had to run control to the lights themselves as well. It also meant that you needed a lot more channels of control. A fixture that formerly only needed one channel of control for intensity might now need intensity, pan, tilt, zoom, color, focus, gobo control, and more.  With the addition of LED fixtures, multiple channels of color control were introduced as well. 512 channels was no longer enough. That's why, in modern lighting systems where DMX is used, the channels are broken out into DMX universes, or groups of 512 channels.
+
+Most DMX-controlled LED fixtures that don't need a separate dimming rack. These fixtures are usually daisy-chained, just like the racks used to be, so that the controller at the beginning of the chain can control all the fixtures. 
 
 ### What do DMX connectors look like?
 
