@@ -39,7 +39,7 @@
 
 WiFiUDP Udp;                                  // instance of UDP library
 sACNSource myController(Udp);                 // Your Ethernet-to-DMX device
-char receiverAddress[] = "192.168.0.23";      // sACN receiver address
+char receiverAddress[] = "128.122.151.163";      // sACN receiver address
 
 int myUniverse = 1;                                 // DMX universe
 char myDevice[] = "myDeviceName";                   // sender name
@@ -83,10 +83,6 @@ void loop() {
     delay(100);                                    // wait .1 second
   }
   delay(1000);
-  // update the color values:
-  myController.setChannel(1, 140);
-  myController.setChannel(2, 89);
-  myController.setChannel(3, 200);
   // fade down:
   for (int level = 255; level >= 0; level--) {
     myController.setChannel(3, level);              // set channel 4 (brightness)
@@ -95,8 +91,4 @@ void loop() {
     delay(100);                                    // wait .1 second
   }
   delay(1000);
-  // update the color values:
-  myController.setChannel(1, 140);
-  myController.setChannel(2, 89);
-  myController.setChannel(3, 200);
 }
