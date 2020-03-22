@@ -56,7 +56,7 @@ Once the circuit is ready, you can use any of the following examples or the [lib
 
 * [DMX Fade knob](https://github.com/tigoe/DMX-Examples/tree/master/ArduinoDMX-Examples/DMXFadeKnob): fades a DMX channel based on the value of a potentiometer. Sends the DMX signal every 30ms.
 * [DMX Fade multi channel](https://github.com/tigoe/DMX-Examples/tree/master/ArduinoDMX-Examples/DMXFadeMultiChannel): fades each of the first four DMX channels from 0 to 255 and back to 0. When it finishes with each channel, it moves on to the next channel.
-* [BLE to DMX](https://github.com/tigoe/DMX-Examples/tree/master/ArduinoDMX-Examples/BLE_to_DMX): creates a BLE peripheral with three characteristics, and sends the values of those three characteristics as DMX channel values when the characteristics change. 
+* [BLE to DMX](https://github.com/tigoe/DMX-Examples/tree/master/ArduinoDMX-Examples/BLE_to_DMX): creates a BLE peripheral with three characteristics, and sends the values of those three characteristics as DMX channel values when the characteristics change. Works on a BLE-capable board like the Nano 33 IoT or Nano 33 BLE only.
 
 
 
