@@ -106,9 +106,9 @@ Figure 12 shows how you might control a DMX universe from your computer. A USB-t
 
 _Figure 12. A  DMX universe controlled by a personal computer using a USB-to-DMX adapter._
 
-## What is ACN?
+## What is sACN?
 
-Advanced Control Networking (ACN), or streaming ACN (sACN) is a protocol for stage lighting adopted by USITT as a modern replacement for DMX512. Basically, it’s DMX over Ethernet. It works over IP networks. DMX messages are contained in UDP packets. ACN can handle multiple universes of DMX, each with 512 channels.
+Streaming ACN (sACN) is a subset of the Advanced Controller Network protocol for stage lighting adopted by the Entertainment Services & Technology Association (ESTA) as a modern replacement for DMX512. There's a lot to it, but one thing it supports is DMX over IP networks. DMX messages are contained in UDP packets. sACN can handle multiple universes of DMX, each with 512 channels. It's also known as [E1.31](https://tsp.esta.org/tsp/documents/published_docs.php).
 
 ### What Do I Need If I Want to Control sACN Networks From My Computer?
 
