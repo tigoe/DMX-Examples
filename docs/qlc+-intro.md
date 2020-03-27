@@ -18,7 +18,7 @@ _Figure 2. QLC+ Inputs/outputs panel._
 
 #### Setting up a E1.31 (Streaming-ACN) Output
 
-To create a Streaming-ACN (also known as E1.31) output from the "Inputs / Outputs" panel, first click the `Output` radio button next to `E1.31`.  Note that there are two `E1.31` Plugins.  One of them should list `127.0.0.1` (your computer's localhost address) as the device.  The other should list your computer's IP on the local network (usually `192.168.X.XXX` on a home network or `10.XX.XX.XX`  or `172.XX.XX.XX` on an enterprise network such as NYU).  Click the "Output" radio button on the second `E1.31` option (the one on your local network).  
+To create a Streaming-ACN (also known sACN or as E1.31) output from the "Inputs / Outputs" panel, first click the `Output` radio button next to `E1.31`.  Note that there are two `E1.31` Plugins.  One of them should list `127.0.0.1` (your computer's localhost address) as the device.  The other should list your computer's IP on the local network (usually `192.168.X.XXX` on a home network or `10.XX.XX.XX`  or `172.XX.XX.XX` on an enterprise network such as NYU).  Click the "Output" radio button on the second `E1.31` option (the one on your local network).  
 
 Then, double click on this connection and you will be presented with a configuration screen which looks like this: 
 

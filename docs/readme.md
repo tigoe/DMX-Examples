@@ -5,7 +5,7 @@ A collection of examples for controlling DMX-512  devices, in a variety of progr
 Included in this repository are:
 
 * [A Brief Introduction to DMX and sACN](dmx-intro.md)
-* Intro to QLC+
+* [Intro to QLC+](qlc+-intro.md)
 * Intro to TouchDesigner for DMX/sACN
 * [Inventory of equipment used](inventory.md)
 
