@@ -2,6 +2,8 @@
 
 DMX-512 and Advanced controller Networking (ACN) or streaming ACN (sACN) are protocols that were developed for controlling lighting for live entertainment. Here's a brief intro to the protocols.
 
+Here's a [slide deck summarizing this page](https://docs.google.com/presentation/d/1v5_xoVgS9_Ca4CZtl7slAypD7WOzldZXWcB1wp40x8w/edit?usp=sharing), if you like slides. It was written specifically for a presentation at [ITP](https://itp.nyu.edu), and refers to some of the equipment available there.
+
 ## What is DMX-512?
 
 DMX-512 is a control protocol for stage lighting. It is an asynchronous serial communications protocol, based on the RS-485 protocol. It operates at 250 kilobits per second. You can send up to 512 channels of control information in a single DMX-512 message, with 1 byte of information per channel.
