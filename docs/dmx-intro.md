@@ -16,7 +16,7 @@ DMX-512 is a serial protocol, so you connect your controller to the device you w
 
 There are many different kinds of DMX fixtures. Most are stage lighting fixtures, like these:
 
-**Ellipsoidal spotlights**, like the ETC Source 4 LED Spotlight (Figure 1) or the CoeMar LEDKo Reflection LED Spotlight (Figure 2). Ellipsoidals, or Ellipsoidal Reflector Spotlights (ERS), also called LeKos, make a sharp-focused circle. They have shutters to shape the beam, and sometimes an iris. They are typically used for front light, side light, or any time you need to focus the light fairly precisely.
+**Ellipsoidal spotlights**, like the [ETC Source 4 LED](https://www.etcconnect.com/Products/Lighting-Fixtures/Source-Four-LEDs/Features.aspx?utm_campaign=Source-Four-LEDS) Spotlight (Figure 1) or the CoeMar [LEDKo Reflection LED Spotlight](http://www.coemar.com/products/ledko-hd-fullspectrum-6/) (Figure 2). Ellipsoidals, or Ellipsoidal Reflector Spotlights (ERS), also called LeKos, make a sharp-focused circle. They have shutters to shape the beam, and sometimes an iris. They are typically used for front light, side light, or any time you need to focus the light fairly precisely.
 
 ![Figure 1. ETC Source 4 Ellipsoidal spotlight.](img/ellipsoidal-source4.png)
 
@@ -26,7 +26,7 @@ _Figure 1. ETC Source 4 Ellipsoidal spotlight._
 
 _Figure 2. CoeMar LEDKo Ellipsoidal spotlight._
 
-**LED PAR lights** like the ETC Selador Desire D40 (Figure 3) and D60 LED PAR or the ADJ DotZ PAR (Figure 4). PARs give a broad, soft-edged light. They are generally inxpensive and used as workhorses in music shows.
+**LED PAR lights** like the ETC Selador [Desire D40](https://www.etcconnect.com/Products/Lighting-Fixtures/Selador/) (Figure 3) and D60 LED PAR or the [ADJ DotZ PAR](https://www.adj.com/dotz-par) (Figure 4). PARs give a broad, soft-edged light. They are generally inxpensive and used as workhorses in music shows.
 
 ![Figure 3. ETC Selador Desire D40 LED PAR.](img/par-selador-desire-d40.png)
 
@@ -36,24 +36,24 @@ _Figure 3. ETC Selador Desire D40 LED PAR._
 
 _Figure 4. ADJ DotZ LED PAR._
 
-**Gallery-style lights** like the Rosco Miro Cube (Figure 5). These are small fixtures which give a broad, soft-edged light. They are good for gallery work.
+**Gallery-style lights** like the [Rosco Miro Cube](https://us.rosco.com/en/product/miro-cube-4c) (Figure 5). These are small fixtures which give a broad, soft-edged light. They are good for gallery work.
 
 ![Figure 5. Rosco Miro Cube light.](img/miro-cube.png)
 
 _Figure 5. Rosco Miro Cube light._
 
-**Wash lights** like  the ColorKinetics ColorBlast 4 and 8 (Figure 6). These also give a broad, soft-edged light designed for washing walls with color The ColorKinetics units have a separate controller that's rather bulky.
+**Wash lights** like  the ColorKinetics [ColorBlast 4 and 8](https://www.colorkinetics.com/global/products/product-overview#.htmlpage=1&filters=Application%2FWall%20Washing%2C&page=1(Figure 6). These also give a broad, soft-edged light designed for washing walls with color The ColorKinetics units have a separate controller that's rather bulky.
 
 ![Figure 6. ColorKinetics wash light.](img/wash-color-kinetics.png)
 
 _Figure 6. ColorKinetics wash light._
 
-**Moving spotlights** like the Elation Platinum Pro LED (Figure 7). moving spotlight. These are spotlight with motorized control over 
+**Moving spotlights** like the [Elation Platinum Pro LED](https://www.elationlighting.com/platinum-spot-led-pro-ii/?SID=8u09kcu56f5is2hvsh7b0co8d2) (Figure 7). moving spotlight. These are spotlight with motorized control over 
 pan, tilt, color wheel, zoom, focus, template via DMX.
 
 ![Figure 7. Elation Pro Platinum LED moving spotlight.](img/moving-spot-elation.png)
 
-_Figure 7. Elation Pro Platinum LED moving spotlight._
+_Figure 7. [ Elation Pro Platinum LED moving spotlight._
 
 
 ### A Brief History of Stage Lighting Technology, 1970's to Present
