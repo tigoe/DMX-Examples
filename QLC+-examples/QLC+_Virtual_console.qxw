@@ -11,7 +11,7 @@
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="E1.31" Line="2"/>
     <Output Plugin="E1.31" Line="1">
-     <PluginParameters UniverseChannels="110" mcastIP="1" multicast="1" priority="100" transmitMode="Full" ucastIP="128.122.151.163" ucastPort="5568" universe="1"/>
+     <PluginParameters UniverseChannels="110" mcastIP="1" multicast="1" priority="100" transmitMode="Full" ucastIP="192.168.1.24" ucastPort="5568" universe="1"/>
     </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1">
@@ -116,7 +116,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="10">
       <Channel Fixture="0">3</Channel>
      </Level>
      <Playback>
@@ -167,7 +167,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="201">
       <Channel Fixture="0">6</Channel>
      </Level>
      <Playback>
@@ -200,7 +200,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="12">
       <Channel Fixture="0">20</Channel>
      </Level>
      <Playback>
@@ -301,7 +301,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="30">
       <Channel Fixture="0">40</Channel>
      </Level>
      <Playback>
@@ -334,7 +334,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="29">
       <Channel Fixture="0">60</Channel>
      </Level>
      <Playback>
