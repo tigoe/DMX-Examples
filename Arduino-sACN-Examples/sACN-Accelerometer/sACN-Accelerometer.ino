@@ -37,19 +37,21 @@ int myUniverse = 1;                  // DMX universe
 char myDevice[] = "myDeviceName";    // sender name
 
 
-const int buttonPin = 2;
-int level = 0;
-int lastLevel = 0;
-long lastSendTime = 0;
-int interval = 1000;
+const int buttonPin = 2;  // pushbutton pin
+int level = 0;            // current level of the DMX/sACN channel
+int lastLevel = 0;        // previous level
+long lastSendTime = 0;    // last time message sent, in millis
+int interval = 1000;      // time between sends, in millis
 
 void setup() {
+  // initialize serial:
   Serial.begin(9600);
-
+  // initialize IMU sensor:
   if (!IMU.begin()) {
     Serial.println("IMU not working");
     while (true);
   }
+  // initialize pushbutton:
   pinMode(buttonPin, INPUT_PULLUP);
 
   //  while you're not connected to a WiFi AP,
@@ -67,7 +69,7 @@ void setup() {
   Serial.print("IP Address: ");
   Serial.println(ip);
 
-  // set DMX channel values to 0:
+  // set all DMX channel values to 0:
   for (int dmxChannel = 0; dmxChannel < 513; dmxChannel++) {
     myController.setChannel(dmxChannel, 0);
   }
@@ -75,23 +77,30 @@ void setup() {
 }
 
 void loop() {
+  // accelerometer axes:
   float x, y, z;
-
+  // if there's a reading ready:
   if (IMU.accelerationAvailable()) {
+    // read it, store in x, y, and z:
     IMU.readAcceleration(x, y, z);
   }
+  // if the button's pressed, calculate a new
+  // level for the light:
   if (digitalRead(buttonPin) == LOW) {
     float intensity = (x * 127) + 127;
     level = constrain(intensity, 0, 255);
-
   }
 
+  // if the send interval has passed and you have a changed
+  // level, send it:
   if (millis() - lastSendTime > interval &&
       lastLevel != level) {
     myController.setChannel(4, level);              // set channel 1 (intensity)
     Serial.println(level);                          // print level
-    myController.sendPacket(SECRET_SACN_RECV);       // send the data
+    myController.sendPacket(SECRET_SACN_RECV);      // send the data
+    // save current time for comparison next time:
     lastSendTime = millis();
+    // save current level for comparison next time:
     lastLevel = level;
   }
 }
