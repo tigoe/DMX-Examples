@@ -10,6 +10,14 @@
   - Arduino Nano 33 IoT
   - Pushbutton on pin 2, connected to ground
 
+  The #defines in arduino_secrets.h:
+  #define SECRET_SSID ""    // your network name
+  #define SECRET_PASS ""  // your network password
+  #define SECRET_SACN_RECV ""  // your sACN receiver's IP address
+  // Unique ID of your SACN source. You can generate one from https://uuidgenerator.net
+  // or on the command line by typing uuidgen
+  #define SECRET_SACN_UUID ""
+
   created 2 Jun 2020
   by Tom Igoe
 */
@@ -23,10 +31,10 @@
 #include <sACNSource.h>
 #include "arduino_secrets.h"
 
-WiFiUDP Udp;                                  // instance of UDP library
-sACNSource myController(Udp);                 // Your Ethernet-to-DMX device
-int myUniverse = 1;                                 // DMX universe
-char myDevice[] = "myDeviceName";                   // sender name
+WiFiUDP Udp;                         // instance of UDP library
+sACNSource myController(Udp);        // Your Ethernet-to-DMX device
+int myUniverse = 1;                  // DMX universe
+char myDevice[] = "myDeviceName";    // sender name
 
 
 const int buttonPin = 2;
