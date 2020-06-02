@@ -39,6 +39,7 @@ char myDevice[] = "myDeviceName";    // sender name
 
 const int buttonPin = 2;
 int level = 0;
+int lastLevel = 0;
 long lastSendTime = 0;
 int interval = 1000;
 
@@ -85,10 +86,12 @@ void loop() {
 
   }
 
-  if (millis() - lastSendTime > interval) {
+  if (millis() - lastSendTime > interval &&
+      lastLevel != level) {
     myController.setChannel(4, level);              // set channel 1 (intensity)
     Serial.println(level);                          // print level
     myController.sendPacket(SECRET_SACN_RECV);       // send the data
     lastSendTime = millis();
+    lastLevel = level;
   }
 }
