@@ -123,3 +123,5 @@ Best practice is to make the local area network for sACN a dedicated network tha
 ![Figure 13. An sACN network.](img/sacn-to-dmx-configuration.png)
 
 _Figure 13. An sACN network. The network is made up of an Ethernet and WiFi local area network (LAN), a controller which sends sACN data over UDP, and an sACN-to-DMX adapter which connects from the LAN to the DMX universe of fixtures._
+
+Marina Victoria Pascual has a good [introduction to sACN for Touch Designer](https://www.marinavictoria.space/post/touchdesigner-gui-for-dmx-control-not-finished) as well. 
