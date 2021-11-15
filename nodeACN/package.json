@@ -1,0 +1,20 @@
+{
+  "name": "nodeacn",
+  "version": "0.0.1",
+  "description": "a simple E1.31 (streaming ACN) example in node.js",
+  "main": "index.js",
+  "dependencies": {
+    "e131": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e1.31",
+    "sacn",
+    "dmx"
+  ],
+  "author": "Tom Igoe",
+  "license": "ISC"
+}
