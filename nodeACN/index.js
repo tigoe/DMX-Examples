@@ -30,7 +30,7 @@ function blink() {
   // JavaScript array values start at 0. So DMX channel 1
   // is array index 0 in this library. Whatever DMX channel
   // you want to control, subtract one to get the right value:
-
+  // this code updates DMX channel 21 (array index 20):
   if (dmxChannels[20] == 0) {
     dmxChannels[20] = 255;
   } else {
