@@ -1,4 +1,4 @@
-#  DMX and sACN through Touch Designer
+#  DMX and sACN Settings For TouchDesigner
 
 The following are the settings for communicating va DMX-512 from Touch Designer:
 
