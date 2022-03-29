@@ -45,6 +45,6 @@ __Network Tab(shown in Figure 3):__
 
 _Figure 2. DMX tab of a TouchDesigner DMX Out CHOP configured for sACN control._ 
 
-![Figure 3. Network tab of a TouchDesigner DMX Out CHOP configured for sACN control.](img/DMX-CHOP-network-tab2.png)
+![Figure 3. Network tab of a TouchDesigner DMX Out CHOP configured for sACN control.](img/DMX-CHOP-Network-tab2.png)
 
 _Figure 3. Network tab of a TouchDesigner DMX Out CHOP configured for sACN control._
