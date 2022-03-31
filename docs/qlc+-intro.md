@@ -2,6 +2,16 @@
 
 QLC+ is a feee software package for controlling DMX-512 systems. You can connect it to your system via a number of different interfaces: USB-to-DMX adapters, DMX-to-Ethernet adapters, WiFi, Ethernet, and more. 
 
+__Note:__ You may have problems launching QLC+ on MacOS. As of this writing, the latest stable version, 4.12.4, freezes on launch. To get around this, install it in your Applications folder then open the Terminal app and type:
+
+`export QT_MAC_WANTS_LAYER=1`
+
+then 
+
+`open /Applications/QLC+.app`
+
+This will launch the app.
+
 After installing QLC+ and launching the application, you will see the  window shown in Figure 1.  Select `Q Light Controller Plus`.
 
 ![Figure 1. QLC+ intro screen](img/qlc+opener.png)
