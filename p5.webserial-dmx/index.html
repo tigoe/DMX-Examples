@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    div.fixed {
+      position: fixed;
+      top: 120px;
+      left: 10px;
+    }
+
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+  integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/p5-webserial@0.1.1/build/p5.webserial.js"></script>
+  <script src="sketch.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.webserialDMX</title>
+</head>
+<body>
+
+  <div class="fixed">
+   <p>This sketch shows how to control DMX-512 over a Serial UART connection using the WebSerial API. Specifically, it uses the <a href="https://github.com/yoonbuck/p5.WebSerial">p5.webserial library</a> developed by Jordan Yoon-Buck.</p> 
+
+   <p>Plug your DMX-to-USB converter into your laptop, then click the "choose port" to choose it. Then the three sliders onscreen correspond to the first three channels of a DMX-512 universe. They will control whatever you have on DMX addresses 1, 2, and 3.</p>
+    
+    <p>It has been tested with two USB-to-DMX devices: a  <a href="https://dmxking.com/usbdmx/ultradmxmicro">DMXKing UltraDMX Micro</a>  and an <a href="https://www.enttec.com/product/uncategorized/dmx-usb-pro-interface/"></a> Enttec DMX USB PRO Mk2</p>
+
+  <p>Info on the USB-to-DMX packet format thanks to <a href="https://github.com/albrechtnate/DMX.js/blob/master/webSerialDMX.js">Nate Albrecht</a> and <a href="https://cdn.enttec.com/pdf/assets/70304/70304_DMX_USB_PRO_API.pdf">Enttec</a>.
+  </p>
+
+  </div>
+</body>
+</html>
