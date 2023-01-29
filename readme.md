@@ -6,15 +6,15 @@ Included in this repository are:
 
 * [A Brief Introduction to DMX and sACN](dmx-intro.md)
 * [Intro to QLC+](qlc+-intro.md)
-* Intro to TouchDesigner for DMX/sACN
+* [Intro to TouchDesigner for DMX/sACN](touch-designer.md)
 * [Inventory of equipment used](inventory.md)
 
 ## DMX-512 examples
 * [Node.js examples with node-dmx](node-dmx.md)
 * [Arduino examples using ArduinoDMX library](arduinodmx.md)
 * Arduino examples using DMXSimple library
-* *[TouchDesigner DMX and sACN settings](touch-designer.md)
-* [WebSerial-based DMX in p5.js]()
+* [TouchDesigner DMX and sACN settings](touch-designer.md)
+* [WebSerial-based DMX in p5.js](p5.webserial-dmx/)
 
 ## sACN examples
 * [Addressable LED control through sACN with LeDMX Pro4](ledmx-pro4-control.md). Includes TouchDesigner and QLC+ configurations
