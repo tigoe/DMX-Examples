@@ -12,14 +12,13 @@ Included in this repository are:
 ## DMX-512 examples
 * [Node.js examples with node-dmx](node-dmx.md)
 * [Arduino examples using ArduinoDMX library](arduinodmx.md)
-* Arduino examples using DMXSimple library
 * [TouchDesigner DMX and sACN settings](touch-designer.md)
 * [WebSerial-based DMX in p5.js](p5.webserial-dmx/)
 
 ## sACN examples
 * [Addressable LED control through sACN with LeDMX Pro4](ledmx-pro4-control.md). Includes TouchDesigner and QLC+ configurations
 * [sACN control of Stage Lighting Through an DMXKing eDMX1 Pro](edmx-pro1-control.md). Includes TouchDesigner and QLC+ configuration.
-* [sACN control of Stage Lighting Through a Arduino](arduino-sacn.md)
+* [sACN control of Stage Lighting Through an Arduino](arduino-sacn.md)
 
 
 The Arduino circuits described in this repository use on these [breadboard layouts](https://itp.nyu.edu/physcomp/breadboard-layouts/) for reference, and these [microcontroller pin arrangments](https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontroller-pin-functions/).
