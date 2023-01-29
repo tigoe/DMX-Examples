@@ -4,11 +4,11 @@
 
 There are [several examples for node-dmx]({{site.codeurl}}/nodeDmx) in this repository:
 
-* [simpleTest.js](https://github.com/tigoe/DMX-Examples/blob/master/nodeDmx/simpleTest.js) - Shows how to use dmx library with an Enttec USB DMX Pro to control a single channel
-* [Source4.js](https://github.com/tigoe/DMX-Examples/blob/master/nodeDmx/Source4.js) - controls the intensity of an ETC Source4 LED Lustr fixture
-* [ElationSpot.js]()https://github.com/tigoe/DMX-Examples/blob/master/nodeDmx/ElationSpot.js - controls an Elation moving spotlight
-* [simpleBoardServer.js](https://github.com/tigoe/DMX-Examples/blob/master/nodeDmx/simpleBoardServer.js) - HTTP server for a simple fader interface made in p5.js. To use this, make sure the [public]({{site.codeurl}}/nodeDmx/public) directory is in the same directory ad this script, then run the script. 
-* [ElationClock.js](https://github.com/tigoe/DMX-Examples/blob/master/nodeDmx/ElationClock.js) - turns an Elation moving spotlight into a clock
+* [simpleTest.js]({{site.codeurl}}/nodeDmx/simpleTest.js) - Shows how to use dmx library with an Enttec USB DMX Pro to control a single channel
+* [Source4.js]({{site.codeurl}}/nodeDmx/Source4.js) - controls the intensity of an ETC Source4 LED Lustr fixture
+* [ElationSpot.js](){{site.codeurl}}/nodeDmx/ElationSpot.js - controls an Elation moving spotlight
+* [simpleBoardServer.js]({{site.codeurl}}/nodeDmx/simpleBoardServer.js) - HTTP server for a simple fader interface made in p5.js. To use this, make sure the [public]({{site.codeurl}}/nodeDmx/public) directory is in the same directory ad this script, then run the script. 
+* [ElationClock.js]({{site.codeurl}}/nodeDmx/ElationClock.js) - turns an Elation moving spotlight into a clock
 
 ## Usage Notes
 In most of these examples, you'll see a section that handles quit messages, something like this:
