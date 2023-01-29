@@ -16,7 +16,7 @@ DMX-512 is a serial protocol, so you connect your controller to the device you w
 
 There are many different kinds of DMX fixtures. Most are stage lighting fixtures, like these:
 
-**Ellipsoidal spotlights**, like the [ETC Source 4 LED](https://www.etcconnect.com/Products/Lighting-Fixtures/Source-Four-LEDs/Features.aspx?utm_campaign=Source-Four-LEDS) Spotlight (Figure 1) or the CoeMar [LEDKo Reflection LED Spotlight](http://www.coemar.com/products/ledko-hd-fullspectrum-6/) (Figure 2). Ellipsoidals, or Ellipsoidal Reflector Spotlights (ERS), also called LeKos, make a sharp-focused circle. They have shutters to shape the beam, and sometimes an iris. They are typically used for front light, side light, or any time you need to focus the light fairly precisely.
+**Ellipsoidal spotlights**, like the [ETC Source 4 LED](https://www.etcconnect.com/Products/Entertainment-Fixtures/Source-Four-LED-Series-3/Features.aspx) Spotlight (Figure 1) or the CoeMar [LEDKo Reflection LED Spotlight](http://www.coemar.com/products/ledko-hd-fullspectrum-6/) (Figure 2). Ellipsoidals, or Ellipsoidal Reflector Spotlights (ERS), also called LeKos, make a sharp-focused circle. These lights are long and tubular in form. They house the light source in front of a reflector towards the back of the fixture, and place a set of plano-convex lenses in front of the light source. This allows you to focus the light very precisely, by moving the light source relative to the reflector and the lenses relative to the light source. They have shutters to shape the beam, and sometimes an iris. They are typically used for front light, side light, or any time you need to focus the light fairly precisely.
 
 ![Figure 1. ETC Source 4 Ellipsoidal spotlight.](img/ellipsoidal-source4.png)
 
@@ -26,7 +26,7 @@ _Figure 1. ETC Source 4 Ellipsoidal spotlight._
 
 _Figure 2. CoeMar LEDKo Ellipsoidal spotlight._
 
-**LED PAR lights** like the ETC Selador [Desire D40](https://www.etcconnect.com/Products/Lighting-Fixtures/Selador/) (Figure 3) and D60 LED PAR or the [ADJ DotZ PAR](https://www.adj.com/dotz-par) (Figure 4). PARs give a broad, soft-edged light. They are generally inxpensive and used as workhorses in music shows.
+**LED PAR lights** like the ETC Selador [Desire D40](https://www.etcconnect.com/Products/Entertainment-Fixtures/Desire-D40/Features.aspx) (Figure 3) and D60 LED PAR or the [ADJ DotZ PAR](https://www.adj.com/dotz-par) (Figure 4). These lights are generally compact, with an array of lensed LEDs on the front of the fixture. PARs give a broad, soft-edged light. They are generally inxpensive and used as workhorses in music shows.
 
 ![Figure 3. ETC Selador Desire D40 LED PAR.](img/par-selador-desire-d40.png)
 
@@ -36,7 +36,7 @@ _Figure 3. ETC Selador Desire D40 LED PAR._
 
 _Figure 4. ADJ DotZ LED PAR._
 
-**Gallery-style lights** like the [Rosco Miro Cube](https://us.rosco.com/en/product/miro-cube-4c) (Figure 5). These are small fixtures which give a broad, soft-edged light. They are good for gallery work.
+**Gallery-style lights** like the [Rosco Miro Cube](https://us.rosco.com/en/product/miro-cube-4c) (Figure 5). These are small fixtures which give a broad, soft-edged light. They are good for gallery or architectural work. They tend to be less intense than PARs, and smaller. 
 
 ![Figure 5. Rosco Miro Cube light.](img/miro-cube.png)
 
