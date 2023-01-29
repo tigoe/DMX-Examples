@@ -42,14 +42,14 @@ _Figure 4. ADJ DotZ LED PAR._
 
 _Figure 5. Rosco Miro Cube light._
 
-**Wash lights** like  the ColorKinetics [ColorBlast 4 and 8](https://www.colorkinetics.com/global/products/product-overview#.htmlpage=1&filters=Application%2FWall%20Washing%2C&page=1(Figure 6). These also give a broad, soft-edged light designed for washing walls with color The ColorKinetics units have a separate controller that's rather bulky.
+**Wash lights** like  the ColorKinetics [ColorBlast Series](https://www.colorkinetics.com/global/products/rgb/blast-powercore-gen5-rgbw](Figure 6). These lights are generally flat, rectangular, and low-profile. These also give a broad, soft-edged light designed for washing walls with color The ColorKinetics units have a separate controller that's rather bulky.
 
 ![Figure 6. ColorKinetics wash light.](img/wash-color-kinetics.png)
 
 _Figure 6. ColorKinetics wash light._
 
 **Moving spotlights** like the [Elation Platinum Pro LED](https://www.elationlighting.com/platinum-spot-led-pro-ii/?SID=8u09kcu56f5is2hvsh7b0co8d2) (Figure 7). moving spotlight. These are spotlight with motorized control over 
-pan, tilt, color wheel, zoom, focus, template via DMX.
+pan, tilt, color wheel, zoom, focus, and template via DMX.
 
 ![Figure 7. Elation Pro Platinum LED moving spotlight.](img/moving-spot-elation.png)
 
