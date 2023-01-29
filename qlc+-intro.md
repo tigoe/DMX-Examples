@@ -1,16 +1,8 @@
 # Introduction to QLC+
 
-QLC+ is a feee software package for controlling DMX-512 systems. You can connect it to your system via a number of different interfaces: USB-to-DMX adapters, DMX-to-Ethernet adapters, WiFi, Ethernet, and more. 
+QLC+ is a feee software package for controlling DMX-512 systems. You can connect it to your system via a number of different interfaces: USB-to-DMX adapters, DMX-to-Ethernet adapters, WiFi, Ethernet, and more. It's useful as a diagnostic tool when you need to send DMX from your laptop without doing any programming. Though there are other more advance DMX controller apps on the market, QLC+ offers a simple interface to test with. 
 
-__Note:__ You may have problems launching QLC+ on MacOS. As of this writing, the latest stable version, 4.12.4, freezes on launch. To get around this, install it in your Applications folder then open the Terminal app and type:
-
-`export QT_MAC_WANTS_LAYER=1`
-
-then 
-
-`open /Applications/QLC+.app`
-
-This will launch the app.
+The notes here work with release 4.12.6. 
 
 After installing QLC+ and launching the application, you will see the  window shown in Figure 1.  Select `Q Light Controller Plus`.
 
@@ -40,7 +32,7 @@ _Figure 3. Configuring your WiFi interface for E1.31._
 
 By default, sACN (`E1.31`) systems assume you're operating over a dedicated subnet with no other devices other than your controller and the DMX devices you want to control. As a result, the default network setting is to send packets to the multicast address on the subnet, which is `XX.XX.XX.255`. If you're sending sACN messages on a shared network, or worse, the internet at large, you _definitely_ don't want to multicast. Instead, send to a specific address. To connect to a specific output device accepting `E1.31` as an input, uncheck the `Multicast` radio button and enter the IP address and port of your device.
 
-## Controlling Lights!
+## Controlling Lights
 
 Finally, switch over to the "Simple Desk" tab at the bottom of the screen to use QLC+'s lighting board. This will now allow you to send lighting control to the E1.31 (Streaming-ACN) output we specified in the "Inputs / Outputs" tab.
 
