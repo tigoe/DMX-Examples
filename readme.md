@@ -21,4 +21,4 @@ Included in this repository are:
 * [sACN control of Stage Lighting Through an Arduino](arduino-sacn.md)
 
 
-The Arduino circuits described in this repository use on these [breadboard layouts](https://itp.nyu.edu/physcomp/breadboard-layouts/) for reference, and these [microcontroller pin arrangments](https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontroller-pin-functions/).
+The Arduino circuits described in this repository use on these [breadboard layouts](https://itp.nyu.edu/physcomp/breadboard-layouts/) for reference, and these [microcontroller pin arrangments](https://itp.nyu.edu/physcomp/resources/microcontroller-pin-functions/).
