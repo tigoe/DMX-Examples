@@ -12,7 +12,6 @@
   https://cdn.enttec.com/pdf/assets/70304/70304_DMX_USB_PRO_API.pdf
 
   created 24 Jan 2023
-  beta!
   by Tom Igoe
 */
 
