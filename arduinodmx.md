@@ -44,11 +44,11 @@ The wiring from the MAX485 to the XLR connector is as follows:
 
 ![Figure 2. Pin connections for 3-pin DMX cables.](https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-3-pin.jpg)
 
-_Figure 2. Pin diagram for 3-pin DMX connectors. Facing the male connector, and counting clockwise from left, the pins are: ground, DMX 1 Data-, DMX 2 Data+. Image from [mediarealm.com.au](https://mediarealm.com.au/articles/dmx-3-pin-5-pin-wiring/_
+_Figure 2. Pin diagram for 3-pin DMX connectors. Facing the male connector, and counting clockwise from left, the pins are: ground, DMX 1 Data-, DMX 2 Data+. Image from [mediarealm.com.au](https://mediarealm.com.au/articles/dmx-3-pin-5-pin-wiring/)_
 
 ![Figure 3. Pin connections for 5-pin DMX cables.](https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-5-pin.jpg)
 
-_Figure 3. Pin diagram for 5-pin DMX connectors. Facing the male connector, and counting clockwise from left, the pins are: ground, DMX 1 Data-, DMS 2 Data+, DMX 2 Data-, DMX 2 Data+. Image from [mediarealm.com.au](https://mediarealm.com.au/articles/dmx-3-pin-5-pin-wiring/_
+_Figure 3. Pin diagram for 5-pin DMX connectors. Facing the male connector, and counting clockwise from left, the pins are: ground, DMX 1 Data-, DMS 2 Data+, DMX 2 Data-, DMX 2 Data+. Image from [mediarealm.com.au](https://mediarealm.com.au/articles/dmx-3-pin-5-pin-wiring/)_
 
 ## MKR485 Shield Connections to DMX Connector
 
