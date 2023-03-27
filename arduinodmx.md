@@ -1,13 +1,13 @@
 # ArduinoDMX
 
-The [ArduinoDMX library](https://github.com/arduino-libraries/ArduinoDMX), originally written to work with the MKR series Arduinos and the MKR485 shield, will also enable you to send DMX-512 out from any Arduino to control DMX fixtures. This library uses the [ArduinoRS485 library](https://github.com/arduino-libraries/ArduinoRS485) and an RS485 transceiver chip like Maxim's [MAX485](https://www.maximintegrated.com/en/products/interface/transceivers/MAX485.html) chip to send DMX data.
+The [ArduinoDMX library](https://github.com/arduino-libraries/ArduinoDMX), originally written to work with the MKR series Arduinos and the MKR485 shield, will also enable you to send DMX-512 out from any Arduino to control DMX fixtures. This library uses the [ArduinoRS485 library](https://github.com/arduino-libraries/ArduinoRS485) and an RS485 transceiver chip like Maxim's [MAX485](https://www.maximintegrated.com/en/products/interface/transceivers/MAX485.html) chip to send DMX data. It can work with other RS-485 transceiver chips in the same family from Maxim as well.
 
 ## Bill of Materials
 * Arduino (these examples have been tested successfully on the Nano 33 IoT; Nano Every; Uno; Leonardo; and Mega2560. They do not work on the Nano 33 BLE or the Due)
 * Arduino [MKR485 shield](https://store.arduino.cc/usa/arduino-mkr-485-shield) (if you're using one of the MKR series Arduinos) or
 * [MAX485](https://www.digikey.com/product-detail/en/maxim-integrated/MAX485CPA/MAX485CPA-ND/948026) RS485 transceiver IC
 * [120-ohm resistor](https://www.digikey.com/products/en?keywords=120QBK-ND) - for RS485 termination of cables and connectors
-* [XLR 5-pin female connector](https://www.digikey.com/product-detail/en/amphenol-sine-systems-corp/AX5F8M/889-2166-ND/7695453)
+* [XLR 5-pin female connector](https://www.digikey.com/product-detail/en/amphenol-sine-systems-corp/AX5F8M/889-2166-ND/7695453). You can do it with a [3-pin connector](https://www.digikey.com/en/products/detail/amphenol-sine-systems-corp/AX3F/7105448) as well.
 
 For reference, The Arduino circuits described here use these [breadboard layouts](https://itp.nyu.edu/physcomp/breadboard-layouts/)  and these [microcontroller pin arrangments](https://itp.nyu.edu/physcomp/lessons/microcontrollers/microcontroller-pin-functions/).
 
@@ -25,7 +25,7 @@ Connect your Arduino to a MAX485 chip as shown in Figure 1. The ArduinoRS485 lib
 
 ![Figure 1. Arduino Nano 33 IoT connected to a MAX485 chip.](img/nano-rs485.png)
 
-_Figure 1. Arduino Nano 33 IoT connected to a MAX485 chip. The MAX485 is a DIP package. Its pins, reading in a U-pattern from top left, are RO, RE, DE, DI, GND, A, B, Vcc. The pins are connected as described above._
+_Figure 1. Arduino Nano 33 IoT connected to a MAX485 chip. The MAX485 is a DIP package. Its pins, reading in a U-pattern from top left, are RO, RE, DE, DI, GND, A, B, Vcc. The pins are connected as described above. This same diagram works for other Maxim RS-485 chips, including the MAX481,MAX483,MAX485,MAX487,MAX1487, which share the same pin configuration. For more on the connector, see below in the text._
 
 **Note:** on the Uno, you will not be able to use the Serial Monitor for debugging messages because the ArduinoRS485 library takes over the hardware serial port. *Check this on the Every too*
 
@@ -52,11 +52,11 @@ If you're using a MKR485 shield, connect the DMX connector as follows:
 * MKR485 shield jumper positions: Z \/\/ Y set to ON
 
 ## Examples
-Once the circuit is ready, you can use any of the following examples or the [library's examples](https://github.com/arduino-libraries/ArduinoDMX/tree/master/examples) to get started.
+Once the circuit is ready, you can use any of the following examples or the [library's examples](https://github.com/arduino-libraries/ArduinoDMX/tree/main/examples) to get started.
 
-* [DMX Fade knob](https://github.com/tigoe/DMX-Examples/tree/master/ArduinoDMX-Examples/DMXFadeKnob): fades a DMX channel based on the value of a potentiometer. Sends the DMX signal every 30ms.
-* [DMX Fade multi channel](https://github.com/tigoe/DMX-Examples/tree/master/ArduinoDMX-Examples/DMXFadeMultiChannel): fades each of the first four DMX channels from 0 to 255 and back to 0. When it finishes with each channel, it moves on to the next channel.
-* [BLE to DMX](https://github.com/tigoe/DMX-Examples/tree/master/ArduinoDMX-Examples/BLE_to_DMX): creates a BLE peripheral with three characteristics, and sends the values of those three characteristics as DMX channel values when the characteristics change. Works on a BLE-capable board like the Nano 33 IoT or Nano 33 BLE only.
+* [DMX Fade knob](https://github.com/tigoe/DMX-Examples/tree/main/ArduinoDMX-Examples/DMXFadeKnob): fades a DMX channel based on the value of a potentiometer. Sends the DMX signal every 30ms.
+* [DMX Fade multi channel](https://github.com/tigoe/DMX-Examples/tree/main/ArduinoDMX-Examples/DMXFadeMultiChannel): fades each of the first four DMX channels from 0 to 255 and back to 0. When it finishes with each channel, it moves on to the next channel.
+* [BLE to DMX](https://github.com/tigoe/DMX-Examples/tree/main/ArduinoDMX-Examples/BLE_to_DMX): creates a BLE peripheral with three characteristics, and sends the values of those three characteristics as DMX channel values when the characteristics change. Works on a BLE-capable board like the Nano 33 IoT or Nano 33 BLE only.
 
 
 
