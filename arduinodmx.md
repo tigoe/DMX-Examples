@@ -25,7 +25,7 @@ Connect your Arduino to a MAX485 chip as shown in Figure 1. The ArduinoRS485 lib
 
 ![Figure 1. Arduino Nano 33 IoT connected to a MAX485 chip.](img/nano-rs485.png)
 
-_Figure 1. Arduino Nano 33 IoT connected to a MAX485 chip. The MAX485 is a DIP package. Its pins, reading in a U-pattern from top left, are RO, RE, DE, DI, GND, A, B, Vcc. The pins are connected as described above. This same diagram works for other Maxim RS-485 chips, including the MAX481,MAX483,MAX485,MAX487,MAX1487, which share the same pin configuration. For more on the connector, see below in the text._
+_Figure 1. Arduino Nano 33 IoT connected to a MAX485 chip. The MAX485 is a DIP package. Its pins, reading in a U-pattern from top left, are RO, RE, DE, DI, GND, A, B, Vcc. The pins are connected as described above. This same diagram works for other Maxim RS-485 chips, including the MAX481, MAX483, MAX485, MAX487, or MAX1487, which share the same pin configuration. For more on the connector, see below in the text._
 
 **Note:** on the Uno, you will not be able to use the Serial Monitor for debugging messages because the ArduinoRS485 library takes over the hardware serial port. *Check this on the Every too*
 
@@ -41,6 +41,14 @@ The wiring from the MAX485 to the XLR connector is as follows:
 * MAX485 pin 6 to the DMX connector's D- pin
 * MAX485 pin 5 to the DMX connector's D+ pin
 * Connector's ground pin to the ground of your circuit.
+
+![Figure 2. Pin connections for 3-pin DMX cables.](https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-3-pin.jpg)
+
+_Figure 2. Pin diagram for 3-pin DMX connectors. Facing the male connector, and counting clockwise from left, the pins are: ground, DMX 1 Data-, DMX 2 Data+. Image from [mediarealm.com.au](https://mediarealm.com.au/articles/dmx-3-pin-5-pin-wiring/_
+
+![Figure 3. Pin connections for 5-pin DMX cables.](https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-5-pin.jpg)
+
+_Figure 3. Pin diagram for 5-pin DMX connectors. Facing the male connector, and counting clockwise from left, the pins are: ground, DMX 1 Data-, DMS 2 Data+, DMX 2 Data-, DMX 2 Data+. Image from [mediarealm.com.au](https://mediarealm.com.au/articles/dmx-3-pin-5-pin-wiring/_
 
 ## MKR485 Shield Connections to DMX Connector
 
