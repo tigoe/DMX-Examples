@@ -60,7 +60,7 @@ If you're using a MKR485 shield, connect the DMX connector as follows:
 * MKR485 shield jumper positions: Z \/\/ Y set to ON
 
 ## Examples
-Once the circuit is ready, you can use any of the following examples or the [library's examples](https://github.com/arduino-libraries/ArduinoDMX/tree/main/examples) to get started.
+Once the circuit is ready, you can use any of the following examples or the [library's examples](https://github.com/arduino-libraries/ArduinoDMX/tree/master/examples) to get started.
 
 * [DMX Fade knob](https://github.com/tigoe/DMX-Examples/tree/main/ArduinoDMX-Examples/DMXFadeKnob): fades a DMX channel based on the value of a potentiometer. Sends the DMX signal every 30ms.
 * [DMX Fade multi channel](https://github.com/tigoe/DMX-Examples/tree/main/ArduinoDMX-Examples/DMXFadeMultiChannel): fades each of the first four DMX channels from 0 to 255 and back to 0. When it finishes with each channel, it moves on to the next channel.
