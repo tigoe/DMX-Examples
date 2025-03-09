@@ -84,6 +84,7 @@ function updateColor(event) {
   if (channel > 0 && channel < 513) {
     dmxSend(channel, level);
   }
+  infoDiv.html(" Channel: " + channel + " :" + level);
 }
 
 // if there's no port selected, 
