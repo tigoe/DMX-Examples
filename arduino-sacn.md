@@ -1,8 +1,9 @@
 # Arduino sACN Source
-The Arduino sACN Source library
+This page explains the use of the Arduino [sACN Source library](https://tigoe.github.io/sACNSource/) to send streaming ACN messages from an Arduino over IP-based networks. 
 
 ## Bill of Materials
 * Arduino (these examples have been tested successfully on the [Nano 33 IoT](https://store.arduino.cc/usa/nano-33-iot), [MKR1000](https://store.arduino.cc/usa/arduino-mkr1000), and [MKR WiFi 1010](https://store.arduino.cc/usa/mkr-wifi-1010); they require a WiFi radio)
+* For wired Ethernet control, the [Arduino MKR Ethernet]() shield works. 
 * [eDMX1 Pro](https://dmxking.com/artnetsacn/edmx1-pro) 
 * USB power supply for eDMX1 Pro
 * Personal computer
@@ -11,10 +12,10 @@ For reference, The Arduino circuits described here use these [breadboard layouts
 
 It's helpful to understand the basics of sACN and  [sACN control from a laptop](edmx-pro1-control.md) before you continue. 
 
-These examples were tested using an ETC Source4 LED Lustr series 2 ellipsoidal and various other ETC fixtures, but anything that can receive DMX will work. 
+The sACN library for Arduino contains [many good examples](https://tigoe.github.io/sACNSource/examples/) to get you started. The additional examples below were tested using an ETC Source4 LED Lustr series 2 ellipsoidal and various other ETC fixtures, but anything that can receive DMX will work. 
 
 ## Circuit
-There's no extra hardware needed to send sACN messages, but you will need to add external components if you want to add user control from sensors.
+There's no extra hardware needed to send sACN messages over WiFi, but you will need to add external components if you want to add user control from sensors. You will also need an Ethernet adaptor if you plan to send data over wired Ethernet. The sACN library shows how to [connect a MKR Ethernet shield to an Arduino Nano](https://tigoe.github.io/sACNSource/examples/Example7_sACNEthernet/) to do the job. 
 
 You will need to set up your lighting system using an ethernet-to-DMX controller that can receive sACN packets like the DMXKing eDMX1 Pro and know its IP address before you begin. All of these examples assume you've already got a working sACN network.
 
@@ -66,11 +67,6 @@ Here's how you could send only when a sensor has changed. In this case, it will 
 ````
 
 It's not a bad idea to combine both of these techniques, as you'll see in the [sACN Fade knob](https://github.com/tigoe/DMX-Examples/tree/master/Arduino-sACN-Examples/sACNFadeKnob) example. With a send delay of about 100ms, the effect on the physical interaction is relatively minimal, but the traffic reduction for the network is big.
-
-Examples:
-
-* [sACNSimple](https://github.com/tigoe/DMX-Examples/tree/master/Arduino-sACN-Examples/sACNSimple): Sets three DMX channels to set the color of a fixture, then fades a fourth DMX channel to control the intensity. Sends every 100ms.
-
 
 * [sACN Fade knob](https://github.com/tigoe/DMX-Examples/tree/master/Arduino-sACN-Examples/sACNFadeKnob): fades a DMX channel  over sACN based on the value of a potentiometer. Sends the DMX signal every 100ms, and only if the potentiometer has changed by more than 1%.
 
