@@ -1,6 +1,8 @@
 # Controlling DMX Fixtures with DMXKing's eDMX1 Pro 
 DMXKing's eDMX1 Pro interface is an Ethernet-to-DMX adapter which can communicate via sACN or ArtNet. This tutorial shows how to configure it in TouchDesigner and in QLC+ to control regular DMX fixtures.
 
+If your system already has an sACN interface, then you can skip the eDMX1 Pro info, and just look at the configuration screens for TouchDesigner or QLC+.
+
 This has been tested on MacOS Mojave.
 
 ## Bill of Materials
@@ -23,7 +25,6 @@ Power the eDMXPro via its USB connector. You can power it from a wall socket usi
  ![Figure 1. MacOS Network control panel showing a USB-to-Ethernet adapter, to which the eDMX1 Pro is attached.](img/macos-usb-ethernet-control-config.png)
 
 _Figure 1. MacOS Network control panel showing a USB-to-Ethernet adapter, to which the eDMX1 Pro is attached. The eDMX1 Pro has self-assigned an IP address._ 
-
 
  **Note:**  If your eDMX1 Pro is not self-assigning you may need to use the DMXKing [DMXKing eDMX1 Pro Configuration Utility](https://dmxking.com/artnetsacn/edmx1-pro) to configure your eDMX1 Pro's address. The eDMX1 Pro is factory-configured to set itself to a static IP address in the 192.168.0.x range, yet most Ethernet interfaces are configured to set themselves to an address in the 169.254.x.x range when there's no router present.  If your eDMX1 Pro is not showing up when you Node Scan, try the following **with WiFi turned OFF** so that the configuration utility only scans on the USB-to-Ethernet interface:
  
