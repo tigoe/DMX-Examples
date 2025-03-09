@@ -32,6 +32,10 @@ _Figure 3. Configuring your WiFi interface for E1.31._
 
 By default, sACN  systems assume you're operating over a dedicated subnet with no other devices other than your controller and the DMX devices you want to control. As a result, the default network setting is to send packets to the multicast address on the subnet, which is `XX.XX.XX.255`. If you're sending sACN messages on a shared network, or worse, the internet at large, you _definitely_ don't want to multicast. Instead, send to a specific address. To connect to a specific output device accepting `E1.31` as an input, uncheck the `Multicast` radio button and enter the IP address and port of your device.
 
+## Adding Lights
+
+You can define your own lights in QLC+, or you can add light libraries defined by others. The [Open Fixture Library](https://open-fixture-library.org/) contains fixture definitions for many different stage lights. To add them to QLC+, download them in QLC+ format from the site, then open the QLC+ user folder on your system ([this link](https://www.qlcplus.org/old/docs/html_en_EN/questionsandanswers.html#user-folder) explains where to find it on different operating systems) and drop the fixture definitions in there. Then restart QLC+ and you'll be able to add them by clicking the large green  button on the main interface, then searching for the name of the fixture type that you added. 
+
 ## Controlling Lights
 
 Finally, switch over to the "Simple Desk" tab at the bottom of the screen to use QLC+'s lighting board. This will now allow you to send lighting control to the Streaming-ACN output you specified in the "Inputs / Outputs" tab.
