@@ -10,13 +10,13 @@ DMX-512 is a control protocol for stage lighting. It is an asynchronous serial c
 
 Originally, DMX was intended to control brightness of lights, but nowadays, it controls many other devices and other parameters of lights.
 
-DMX-512 is a serial protocol, so you connect your controller to the device you want to control directly. When it was first introduced, this protocol was intended to control racks of AC dimmer circuits. Each rack would have a group of dimmers, and incandescent lights would be plugged into each dimmer. Each rack would have a control board with a DMX input and a DMX pass-through. Dimmer racks were daisy-chained, with the DMX control signal going into the input of the firstrack, then out of its pass through to the second rack, and so forth. This is generally referred to as a **DMX Universe**. Nowadays, LED fixtures have their own dimming circuits built into the fixture itself so they have DMX inputs and passthroughs right on the fixture. 
+Because DMX-512 is a serial protocol, you connect your controller to the device you want to control directly. When it was first introduced, this protocol was intended to control racks of AC dimmer circuits. Each rack would have a group of dimmers, and incandescent lights would be plugged into each dimmer. Each rack would have a control board with a DMX input and a DMX pass-through. Dimmer racks were daisy-chained, with the DMX control signal going into the input of the first rack, then out of its pass through to the second rack, and so forth. This is generally referred to as a **DMX Universe**. Each universe contains 512 channels. Nowadays, LED fixtures have their own dimming circuits built into the fixture itself so they have DMX inputs and passthroughs right on the fixture. As a result, a large show may take several universes to control all the paramters of all the lights. 
 
 ### What Kinds of DMX Fixtures Are There?
 
 There are many different kinds of DMX fixtures. Most are stage lighting fixtures, like these:
 
-**Ellipsoidal spotlights**, like the [ETC Source 4 LED](https://www.etcconnect.com/Products/Entertainment-Fixtures/Source-Four-LED-Series-3/Features.aspx) Spotlight (Figure 1) or the CoeMar [LEDKo Reflection LED Spotlight](http://www.coemar.com/products/ledko-hd-fullspectrum-6/) (Figure 2). Ellipsoidals, or Ellipsoidal Reflector Spotlights (ERS), also called LeKos, make a sharp-focused circle. These lights are long and tubular in form. They house the light source in front of a reflector towards the back of the fixture, and place a set of plano-convex lenses in front of the light source. This allows you to focus the light very precisely, by moving the light source relative to the reflector and the lenses relative to the light source. They have shutters to shape the beam, and sometimes an iris. They are typically used for front light, side light, or any time you need to focus the light fairly precisely. The Kennedy Center has a [good video](https://www.kennedy-center.org/education/resources-for-educators/classroom-resources/media-and-interactives/media/theater/ellipsoidal-reflector-spotlights/) explaining how ERS spots work, with views of the spot in action. 
+**Ellipsoidal spotlights**, like the [ETC Source 4 LED](https://www.etcconnect.com/Products/Entertainment-Fixtures/Source-Four-LED-Series-3/Features.aspx) Spotlight (Figure 1) or the CoeMar [LEDKo Reflection LED Spotlight](https://www.coemar.com/products/ledko-plus/) (Figure 2). Ellipsoidals, or Ellipsoidal Reflector Spotlights (ERS), also called LeKos, make a sharp-focused circle. These lights are long and tubular in form. They house the light source in front of a reflector towards the back of the fixture, and place a set of plano-convex lenses in front of the light source. This allows you to focus the light very precisely, by moving the light source relative to the reflector and the lenses relative to the light source. They have shutters to shape the beam, and sometimes an iris. They are typically used for front light, side light, or any time you need to focus the light fairly precisely. The Kennedy Center has a [good video](https://www.kennedy-center.org/education/resources-for-educators/classroom-resources/media-and-interactives/media/theater/ellipsoidal-reflector-spotlights/) explaining how ERS spots work, with views of the spot in action. 
 
 ![Figure 1. ETC Source 4 Ellipsoidal spotlight.](img/ellipsoidal-source4.png)
 
@@ -88,9 +88,9 @@ _Figure 10.XLR-to-RJ45 connectors_
 There are many other kinds of DMX fixtures. It's also become popular to control LED strips and programmable LEDs with DMX, and for that purpose, there are a range of controllers you can buy. 
 
 ### What Do I Need If I want to Control DMX From My Computer?
-First you'll need a USB-to-DMX adapter like the Enttec [DMX Pro](https://www.enttec.com/product/controls/dmx-usb-interfaces/dmx-usb-interface/) USB-to-DMX adapter or [DMXKing UltraDMX Micro](https://dmxking.com/usbdmx/ultradmxmicro) USB-to-DMX adapter.
+First you'll need a USB-to-DMX adapter like the Enttec [DMX Pro](https://www.enttec.com/product/dmx-usb-interfaces/dmx-usb-pro-professional-1u-usb-to-dmx512-converter/) USB-to-DMX adapter or [DMXKing UltraDMX Micro](https://dmxking.com/usbdmx/ultradmxmicro) USB-to-DMX adapter.
 
-You'll also need software that can communicate using your DMX interface. [QLC+](https://www.qlcplus.org/), the [TouchDesigner](https://derivative.ca/product) IDE, and [node.js](https://nodejs.org/en/) using the [node-dmx](https://github.com/node-dmx/dmx) library can all do this. 
+You'll also need software that can communicate using your DMX interface. [QLC+](https://www.qlcplus.org/), the [TouchDesigner](https://derivative.ca/product) IDE, and [node.js](https://nodejs.org/en/) using the [node-dmx](https://github.com/node-dmx/dmx) library or the [node-sacn](https://www.npmjs.com/package/sacn) library can all do this. 
 
 ### How are DMX Devices Connected Together?
 
@@ -112,9 +112,8 @@ _Figure 12. A  DMX universe controlled by a personal computer using a USB-to-DMX
 
 Streaming ACN (sACN) is a subset of the Advanced Controller Network protocol for stage lighting adopted by the Entertainment Services & Technology Association (ESTA) as a modern replacement for DMX512. There's a lot to it, but one thing it supports is DMX over IP networks. DMX messages are contained in UDP packets. sACN can handle multiple universes of DMX, each with 512 channels. It's also known as [E1.31](https://tsp.esta.org/tsp/documents/published_docs.php).
 
-### What Do I Need If I Want to Control sACN Networks From My Computer?
 
-You'll need an Ethernet-to-DMX adapter like the DMXKing [eDMX1 Pro](https://dmxking.com/artnetsacn/edmx1-pro) Ethernet-to-DMX adapter. You'll also need an Ethernet router, or a USB-to-Ethernet adapter. You'll want DMXKing's [DMXKing eDMX1 Pro Configuration Utility](https://dmxking.com/artnetsacn/edmx1-pro) as well.
+sACN can be sent over any IP-based network. It can be sent over Ethernet or WiFi, as many of these examples show, but generally stage lighting technicians avoid WiFi when wired Ethernet is available, as it is more reliable and less prone to interference. Best practice is to make the local area network for sACN a dedicated network that's carrying no other traffic and is not connected to the Internet. This ensures the best connectivity between controller and lights.
 
 Figure 13 shows a typical sACN network. Your controller is connected to an ethernet or WiFi network, and an sACN-to-DMX adapter like the eDMX1 Pro is attached to the same network via wired Ethernet. The controller sends sACN packets over the network to the adapter. Those packets contain DMX channel information. The adapter outputs DMX to the universe of fixtures attached to it, just like the DMX universes described in Figures 4 and 5. 
 
@@ -123,3 +122,9 @@ Best practice is to make the local area network for sACN a dedicated network tha
 ![Figure 13. An sACN network.](img/sacn-to-dmx-configuration.png)
 
 _Figure 13. An sACN network. The network is made up of an Ethernet and WiFi local area network (LAN), a controller which sends sACN data over UDP, and an sACN-to-DMX adapter which connects from the LAN to the DMX universe of fixtures._
+
+### What Do I Need If I Want to Control sACN Networks From My Computer?
+
+You'll need an Ethernet-to-DMX adapter like the DMXKing [eDMX1 Pro](https://dmxking.com/artnetsacn/edmx1-pro) Ethernet-to-DMX adapter. You'll also need an Ethernet router, or a USB-to-Ethernet adapter. You'll want DMXKing's [DMXKing eDMX1 Pro Configuration Utility](https://dmxking.com/artnetsacn/edmx1-pro) as well.
+
+Most laptop-based DMX control software, such as QLC+, TouchDesigner, or ETC's EOS software, can communicate over either DMX or sACN. [This page](edmx-pro1.control.md) shows example setups for TouchDesigner or QLC+.
