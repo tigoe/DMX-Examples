@@ -1,5 +1,5 @@
 /*
-  sACN Fade with potentiometer knob
+  sACN Fade with encoder knob
 
   This sketch fades the value of a DMX channel
   over an sACN connecton between 0 and 255
