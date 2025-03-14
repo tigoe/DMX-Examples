@@ -1,0 +1,17 @@
+input[type="range"] {
+  width: 20px;
+  margin: 0;
+  writing-mode: vertical-lr;
+  direction: rtl;
+
+}
+
+input[type="number"] {
+  width: 40px;
+  margin: 2;
+}
+
+td{
+  text-align: center;
+  vertical-align: middle;
+}
