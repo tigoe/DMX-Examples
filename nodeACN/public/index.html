@@ -10,8 +10,13 @@
 </head>
 
 <body>
-  <p>This example shows how to send streaming ACN (sACN) from a browser client using node.js and the node.js sacn library available at <a href="https://www.npmjs.com/package/sacn">this link</a>.</p>
-  <p>The sliders and number boxes below all send a DMX level (constrained to 0-255) to the node server whenever you change them. The node server then sends the sACN data to the listener. In other words, this won't work from a generic web server, you'll need to use the actual node.js script that's accompanying this file as your server in order to send sACN. You'll need that server to be on a computer on the same physical network as your sACN receiver as well. 
+  <p>This example shows how to send streaming ACN (sACN) from a browser client using node.js and the node.js sacn
+    library available at <a href="https://www.npmjs.com/package/sacn">this link</a>.</p>
+  <p>The sliders and number boxes below all send a DMX level (constrained to 0-255) to the node server whenever you
+    change them. The node server then sends the sACN data to the listener. In other words, this won't work from a
+    generic web server, you'll need to use the actual node.js script that's accompanying this file as your server in
+    order to send sACN. You'll need that server to be on a computer on the same physical network as your sACN receiver
+    as well.
   </p>
   <div>
     Starting DMX Channel: <input type="number" min="0" max="512" id="startingChannel" onChange="generateControls()"><br>
@@ -20,16 +25,11 @@
 
   <h2>DMX Channels: </h2>
   <table id="controls">
-    <tr id="channelTableHead">
-   
-  </tr>
-    <tr id="numberBoxes">
-  
-    </tr>
-    <tr id="sliders">
-    </tr>
- </table>
-<div id="result"></div>
+    <tr id="channelTableHead"></tr>
+    <tr id="numberBoxes"></tr>
+    <tr id="sliders"></tr>
+  </table>
+  <div id="result"></div>
 </body>
 
 </html>
