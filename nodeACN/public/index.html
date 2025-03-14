@@ -13,37 +13,20 @@
   <p>This example shows how to send streaming ACN (sACN) from a browser client using node.js and the node.js sacn library available at <a href="https://www.npmjs.com/package/sacn">this link</a>.</p>
   <p>The sliders and number boxes below all send a DMX level (constrained to 0-255) to the node server whenever you change them. The node server then sends the sACN data to the listener. In other words, this won't work from a generic web server, you'll need to use the actual node.js script that's accompanying this file as your server in order to send sACN. You'll need that server to be on a computer on the same physical network as your sACN receiver as well. 
   </p>
+  <div>
+    Starting DMX Channel: <input type="number" min="0" max="512" id="startingChannel" onChange="generateControls()"><br>
+    Number of Channels: <input type="number" min="0" max="512" id="channelCount" onchange="generateControls();">
+  </div>
+
   <h2>DMX Channels: </h2>
-  <table>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-    <th>5</th>
-    <th>6</th>
-    <th>7</th>
-    <th>8</th>
-    <tr>
-      <td><input type="number" min="0" max="255"  class="control" id="1" onchange="updateChannel();"></td>
-      <td><input type="number" min="0" max="255"  class="control"id="2" onchange="updateChannel ();"></td>
-      <td><input type="number" min="0" max="255"  class="control" id="3" onchange="updateChannel();"></td>
-      <td><input type="number" min="0" max="255"  class="control" id="4" onchange="updateChannel();"></td>
-      <td><input type="number" min="0" max="255"  class="control" id="5" onchange="updateChannel();"></td>
-      <td><input type="number" min="0" max="255"  class="control" id="6" onchange="updateChannel();"></td>
-      <td><input type="number" min="0" max="255"  class="control" id="7" onchange="updateChannel();"></td>
-      <td><input type="number" min="0" max="255"  class="control" id="8" onchange="updateChannel();"></td>
-
+  <table id="controls">
+    <tr id="channelTableHead">
+   
+  </tr>
+    <tr id="numberBoxes">
+  
     </tr>
-    <tr>
-      <td><input type="range" id="1" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-      <td><input type="range" id="2" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-      <td><input type="range" id="3" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-      <td><input type="range" id="4" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-      <td><input type="range" id="5" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-      <td><input type="range" id="6" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-      <td><input type="range" id="7" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-      <td><input type="range" id="8" class="control" min="0" max="255" value="0" onChange="updateChannel();"></td>
-
+    <tr id="sliders">
     </tr>
  </table>
 <div id="result"></div>

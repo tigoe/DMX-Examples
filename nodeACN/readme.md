@@ -15,3 +15,9 @@ in the sACNSender object below:
 * **iface**: you may need to explicitly set the IP address of your network interface. For example, if you are using a wired Ethernet adaptor for sACN transmission, set that adaptor's address as the iface value. This will stop the script from sending over WiFi or some other network interface. 
 * **reuseAddr**: set this to true. This allows other applications on your machine to send using the same network interface.
 * **useUnicastDestination**: set this to the address of your sACN receiver if you're not using unicast. Most sACN systems default to sending data via multicast, on address 239.255.0.1. However, some networks don't allow that. If that's the case for you, find out the IP address for your sACN receiver and set this variable to that address.  
+
+The server and the client in this application communicate using a JSON object filled with the channel numbers and their levels, like so:
+````
+{1: 23, 2: 255, 3: 45, 4: 199}
+````
+There can be up to 512 channels. 

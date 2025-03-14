@@ -36,7 +36,7 @@ const sACNSender = new Sender({
   universe: 1,
   port: 5568,
   // use the IP address of your wired Ethernet interface:
-  iface: '192.168.0.12',
+  // iface: '192.168.0.12',
   // allow for other programs to use the interface too:
   reuseAddr: true,
   // set this in Hz if you want to send continually 
@@ -67,7 +67,7 @@ function receiveFromBrowser(request, response) {
   let data = request.body;
   console.log(data);
   sendACN(data);
-  response.end("sent" + JSON.stringify(data));
+  response.end("sent: " + JSON.stringify(data));
 }
 
 ////////// this function is called when you need to send sACN data:
