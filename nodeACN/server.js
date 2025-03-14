@@ -36,14 +36,14 @@ const sACNSender = new Sender({
   universe: 1,
   port: 5568,
   // use the IP address of your wired Ethernet interface:
-  // iface: '172.20.151.91',
+  iface: '192.168.0.12',
   // allow for other programs to use the interface too:
   reuseAddr: true,
   // set this in Hz if you want to send continually 
   // (5Hz = 200ms refresh rate):
   //minRefreshRate: 5
   // if you're using unicast, set the address here:
-  // useUnicastDestination: '172.22.151.203'
+  // useUnicastDestination: '192.168.0.100'
 });
 const sourceName = "node-sacn-server";
 
