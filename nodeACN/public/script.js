@@ -18,7 +18,7 @@ function setup() {
       let val = Number(c.value);
       data[key] = val;
     }
-    if (c.type == 'text') {
+    if (c.type == 'number') {
       // add the number box controls to the numberBox array:
       numberBoxes.push(c);
     }
