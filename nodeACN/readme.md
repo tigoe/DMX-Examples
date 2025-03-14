@@ -1,6 +1,6 @@
-# Express.js and node-sacn server. 
+# Express.js and node-sacn server
 
-An example of how to send streaming ACN (sACN) from JavaScript. 
+An example of how to send streaming ACN (sACN) from JavaScript. Here's the [link to the code](https://github.com/tigoe/DMX-Examples/tree/main/nodeACN). 
 
 This script uses the [node-sacn library](https://www.npmjs.com/package/sacn) and [express.js](https://expressjs.com) to serve a browser-based interface to control 8 channels of DMX lighting using  streaming ACN (sACN). To make it work:
 *  connect to the same wired network as your sACN receiver system
