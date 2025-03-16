@@ -21,5 +21,4 @@ Included in this repository are:
 * [sACN control of Stage Lighting Using node.js and a browser-based interface](nodeACN/readme.md)
 * [sACN control of Stage Lighting Through an Arduino](arduino-sacn.md)
 
-
 The Arduino circuits described in this repository use on these [breadboard layouts](https://itp.nyu.edu/physcomp/breadboard-layouts/) for reference, and these [microcontroller pin arrangments](https://itp.nyu.edu/physcomp/resources/microcontroller-pin-functions/).
