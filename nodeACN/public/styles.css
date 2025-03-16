@@ -1,17 +1,21 @@
+/* Sets the dimensions of the sliders */
 input[type="range"] {
   width: 20px;
+  height: 200px;
   margin: 0;
+  /* these two lines make the sliders vertical: */
   writing-mode: vertical-lr;
   direction: rtl;
 
 }
-
+/* Sets the width of the number inputs */
 input[type="number"] {
   width: 40px;
   margin: 2;
 }
 
-td{
+/* This centers the number inputs and sliders in each table box: */
+td {
   text-align: center;
   vertical-align: middle;
 }
