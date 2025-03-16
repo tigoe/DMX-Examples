@@ -18,6 +18,7 @@ Included in this repository are:
 ## sACN examples
 * [Addressable LED control through sACN with LeDMX Pro4](ledmx-pro4-control.md). Includes TouchDesigner and QLC+ configurations
 * [sACN control of Stage Lighting Through an DMXKing eDMX1 Pro](edmx-pro1-control.md). Includes TouchDesigner and QLC+ configuration.
+* [sACN control of Stage Lighting Using node.js and a browser-based interface](nodeACN/readme.md)
 * [sACN control of Stage Lighting Through an Arduino](arduino-sacn.md)
 
 
